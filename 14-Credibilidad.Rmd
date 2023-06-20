@@ -1,0 +1,346 @@
+# Credibilidad
+## Teoría de la credibilidad
+### Introducción
+
+La teoría de la credibilidad es el conjunto de técnicas actuariales que permiten al asegurador ajustar de modelo sistemático las primas de los seguros en función de la experiencia de la siniestralidad ocurrida.
+
+En la teoría de la credibilidad tienen roles primordiales los dos tipos de riesgo ya considerados: el riesgo _individual_ y el riesgo _colectivo_, y se da una solución rigurosa al problema de cómo analizar la información proveniente de estas dos fuentes, para calcular la prima de seguros y obtener una tarifa justa.
+
+La teoría de la credibilidad como disciplina matemática, utiliza diversas herramientas de varios campos de las matemáticas: Estadística Bayesiana, análisis funcional, mínimos cuadrados, modelos de espacio de esados, entre muchos otros. Varios autores, Beiley. Longley-Cook, Mayerson, Bühlmann, Straub, Jewell, entre otros, se han dado a la tarea de dar una fundamentación matemática rigurosa a esta teoría, que la ha convertido en una de las ramas más atractiva y estudiada de la ciencia actuarial. Uno de sus principales usos aparece en el seguro de automóviles, en el que las primas se van transformando paulatinamente a medida que se incorpora información sobre la siniestralidad, dando origen  a los denominados sistemas de tarificación _bonus-malus_.
+
+El término _credibilidad_ se introdujo por primera vez en _USA_ antes de la primera guerra mundial, en relación con los sistemas de ajuste de primas en seguros de compensación obrera o seguros de accidentes. Por ese entonces, numerosas empresas ejercieron una fuerte presión a las aseguradoras dada la baja siniestralidad laboral y la elevada tasa de actividad, para que se les reconociera este hecho en los importes de primas a pagar.
+Withney (1918) publicó los primeros trabajos en esta materia con la aparición en los _Proceedings de la Casualty Actuarial Society_. de una forma simple, a través de una matemática elemental, propone que la prima que debe pagar un asegurado considere tanto la experiencia individual (del asegurado) y la del colectivo (la carta de seguros). De esta manera, la estimación del monto de la prima, se calculará como: 
+
+
+$$\textbf{P}=Z\cdot\textbf{X}+(1-Z)\cdot\textbf{C}~~~~~~~~(1)$$
+
+Con $\textbf{X}$ la experiencia individual, $\textbf{C}$ es la información disponible del colectivo y Z es un factor que pondera estas dos informaciones, conocido como $\textit{factor de credibilidad }$. Esta expresión dio respuesta a la idea que rondaba la mente de muchos actuarios de la época. Encontrar un mecanismo que permitiera asignar a estos dos tipos de información, la individual y la colectiva, un peso o ponderación que las complementara para la determinación de la prima a cobrar.
+
+Intuitivamente, este factor de credibilidad, Z, debería satisfacer las siguientes condiciones:
+
+- Debe ser una función del tiempo de vigencia de la póliza, $\textit{n}$, i.e., $Z=Z(n)$.
+- Debe ser una función creciente de $n$, de tal manera que converja a $uno$ si $n\to \infty $ y tienda a $cero$ cuando $n\to 0$. Este ultimo caso, ($n=0$), implicaría que no se tiene información sobre el asegurado (sería un contrato nuevo), y la prima a cobrar sería, $C$, la que se basa en la información del colectivo. En la medida que se incremente la información del asegurado (que $n$ crezca), entonces esta información empezaría a tener más peso en el cálculo de la prima a cobrar, i.e., la experiencia de la siniestralidad del asegurado tendría mayor verosimilitud o credibilidad. En el caso extremo, ($n\to\infty$), el valor de la prima debería ser $X$, esto es, la prima debería basarse únicamente en la experiencia individualidad de la siniestralidad del asegurado. 
+- El factor de la credibilidad, $Z$, debería ser también una función creciente de la varianza de las primas teóricas, con límite $uno$ cuando esta varianza tienda a infinito, y $cero$ cuando tienda a cero. La lógica de esta cuestión es que si la cartera no es $\textit{heterogénea}$, i.e., es $\textit{homogénea}$ entonces la prima basada en la información del colectivo sería el mejor estimador de la prima individual. Por el contrario, una mayor heterogeneidad de la cartera, debería propiciar un mayor peso a la información individual del asegurado.
+
+A mediados del siglo $XX$ empezaba a tomar forma un nuevo enfoque de la estadística, la  $\textit{Estadística Bayesiana}$. No pasó mucho tiempo para que se constatara que muchos estimadores de Bayes, obtenidos para ciertas verosimilitudes (distribución conjunta de los datos) y la distribución $\textit{A priori}$ o inicial natural conjugada del parámetro o parámetros que determinan esta verosimilitud, correspondían a la expresión $(1)$. De hecho, Whetney (1918) ya señalaba que el problema de credibilidad era un caso de cálculo de probabilidades inversas (teorema de Bayes). En el trabajo de Mayerson (1964) se utilizan por primera vez los términos de credibilidad y estadística Bayesiana.
+
+Bajo el enfoque Bayesiano, la fórmula de credibilidad $(1)$ puede interpretarse también de la siguiente manera. Puede verse a $\textbf{C}$ como la información a priori (basada, por ejemplo, en contratos similares) y $\textbf{X}$ la nueva información obtenida mediante la observación de la siniestralidad de los últimos años. Finalmente, la prima, $\textbf{P}$, es el resultado de combinar la información a priori con la información adquirida para obtener un $\textit{estimador actualizado}$ de la prima. Por lo tanto, la teoría de la credibilidad es un proceso Bayesiano que combina la información inicial o apriori  con la información muestral para lograr una actualización del estimador de la prima.
+
+Consideremos un riesgo determinado que proveniente de un conjunto de asegurados vigentes por un periodo determinado. Si este grupo de asegurados es homogéneo, en el sentido de que todos sus miembros tienen la misma probabilidad de realizar una reclamación, entonces es razonable aplicar una misma prima para todos ellos. Sin embargo, cuando el grupo no es homogéneo, o bien, al paso del tiempo aparecen factores de heterogeneidad dentro del mismo, habrá subgrupos de bajo riesgo y otros de alto riesgo. Cobrar una misma prima a todos resultaría injusto, y no sería conveniente para la aseguradora, pues, eventualmente, los asegurados de bajo riesgo buscarían un mejor trato con otra aseguradora. La idea fundamental es aplicar primas menores a los asegurados de bajo riesgo y primas mayores a los de alto riesgo, con base en el historial de reclamaciones que cada uno de los asegurados o subgrupos hayan realizado durante los periodos anteriores. $\textit{En la teoría de la credibilidad}$ se estudian métodos para el cálculo de primas a través de la combinación de la experiencia individual (historial de reclamaciones, datos propios) y la experiencia de grupo (datos del mercado, contratos similares, experiencia propia acumulada, datos colaterales).
+
+Con base en lo dicho anteriormente, podemos decir que la finalidad de la $\textit{teoría de la credibilidad}$ es **ajustar** el valor de una $prima$ con base en el $historial$/$experiencia$ que tiene la aseguradora con cierto siniestro. Para lograr esto, nosotros en este caso vamos a trabajar ajustando la $\textit{prima de riesgo}$, en general se puede hacer esto para que la $\textit{prima de tarifa}$ pueda ser calculada tomando como referencia a la de riesgo.
+
+Tomaremos para esta sección $S$ un riesgo arbitrario que busca absorber una aseguradora, correspondiente a un asegurado o grupo de asegurados con $\textit{características homogéneas}$ y válido por un periodo determinado. Denotaremos como $\{ S_i \}_{i=1}^{m}$ los montos registrados de las reclamaciones efectuadas por el asegurado o portafolio de asegurados durante $m$ periodos consecutivos.
+
+Con base en la estadística clásica y Bayesiana, las metodologías que hay para la teoría de la credibilidad son dos principales ramas:
+
+\begin{equation*}
+    \text{Teoría de la credibilidad}
+    \begin{cases}
+        \text{Clásica} \begin{cases}
+            \text{Completa}\\
+            \text{Parcial}
+    \end{cases}\\
+    \text{Bayesiana}
+    \end{cases}
+\end{equation*}
+
+Al igual que se hizo a lo largo de la historia, exploraremos la forma **clásica**, pues tiene sus fundamentos en resultados asintóticos que ya se han trabajado. Posteriormente veremos la perspectiva **Bayesiana** que es otra manera de atacar el problema pero con el apoyo de los fundamentos de la parte clásica.
+
+### Credibilidad Completa/total
+
+Para lograr el ajuste a la $\textit{prima de riesgo}$, la cual estamos modelando como $\mathbb{E}[S]$, con base en el histórico, vamos a recurrir a su versión muestral.
+
+Como ya lo hemos hecho antes, nos interesa conocer el comportamiento de:
+
+$$\overline{S}= \frac{1}{m}\sum_{i=1}^{m}S_i$$
+
+Esto lo haremos así pues, si la **modelación del riesgo** que nosotros estamos proponiendo es correcta, entonces por las leyes de los grandes números:
+
+\begin{equation*}
+    \begin{array}{cc}
+     \text{La prima de} \\ \text{riesgo que nos } \\ \text{dicen los datos.}\end{array}
+= \overline{S}= \displaystyle\frac{1}{m}\displaystyle\sum_{i=1}^{m}S_i~ \xrightarrow[m\to \infty]{c.s} ~\mathbb{E}[S]=\begin{array}{cc}
+     \text{La prima de } \\ \text{riesgo según el } \\ \text{modelo propuesto.}\end{array}
+\end{equation*}
+
+Por lo que si nuestro modelo es incorrecto, esta relación no se da.
+
+Si estamos modelando de manera correcta, tiene sentido que, mientras el portafolio se mantenga homogéneo a medida que m crezca la información nueva sustente nuestra teoría. De lo contrario, aún consiguiendo $m$ lo suficientemente grande, los datos no ajustarán el modelo.
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("Imágenes/convergencia de s.png", error=FALSE)
+```
+
+Por lo que nos interesa encontrar el valor de m tal que según nuestro modelo, $\overline{S}$ se encuentre "razonablemente" cercano a $\mathbb{E}[S]$. El que esto suceda es precisamente lo que le da credibilidad al modelo.
+
+**Definición.**
+
+Sean $k,~p$ dos números fijos, se dice que $\overline{S}$ tiene **Credibilidad completa** (k,p) si:
+
+\begin{equation*}
+    \mathbb{P}\left[ |\overline{S}- \mathbb{E}[S]|\leq k\mathbb{E}[S]\right]\geq p
+\end{equation*}
+
+**Nota:** En general se asume que $\mathbb{E}[S]\neq 0$ por(espero) obvias razones. Así que para que lo dicho anteriormente tenga sentido, se toman valores para $k$ cercanos a cero y $p$ cercanos a uno. Así como se toma un nivel de significación $\alpha=0.05$, lo más usal es tomar $k=0.05$,  $p=0.90$.
+
+### Credibilidad Completa Bajo Hipótesis de Normalidad
+
+Como usualmente es complicado obtener expresiones analíticas para las probabilidades de $S$, acudiremos a las aproximaciones.
+
+Encontraremos la condición sobre el número de periodos de observación $m$, para obtener credibilidad completa usando la distribución normal.
+
+#### Ejercicio: {-} 
+
+Arrastra el lápiz si no recuerdas que:
+
+$$\mathbb{E}[\overline{S}]=\mathbb{E}[S]~~~~~~~y~~~~~~~ Var(\overline{S})= \frac{1}{m}Var(S)$$
+
+Tenemos que:
+
+$$p\le\mathbb{P}\left[ | \overline{S} - \mathbb{E}[S] | \leq k\mathbb{E}[S] \right]=\mathbb{P} \left[ \frac{| \overline{S} - \mathbb{E}[S] |}{\sqrt{Var(\overline{S})}} \leq \frac{k\mathbb{E}[S]}{\sqrt{Var(\overline{S})}}\right]$$
+
+Llamando:
+
+$$\gamma=\frac{k\mathbb{E}[S]}{\sqrt{Var(\overline{S})}} $$
+
+$$\underbrace{p\leq \mathbb{P}\left[ -\gamma \leq   \frac{\overline{S}-\mathbb{E}[\overline{S}]}{\sqrt{Var(\overline{S})}} \leq \gamma \right]}_{Usando~ el ~valor ~absoluto ~anterior~ y~ que~ \mathbb{E}[\overline{S}]=\mathbb{E}[S]}$$
+
+$$\underbrace{\thickapprox \Phi(\gamma) - \Phi(-\gamma)}_{\text{usando ley de los grandes números}}$$
+
+$$=\underbrace{  2\Phi(\gamma)-1  }_{\text{Por la simetría de la normal}~ \Phi(-x)=1-\Phi(x)}$$
+
+$$= 2\Phi\left( \frac{k\mathbb{E}[S]}{\sqrt{Var(S)}} \right)-1     \underbrace{ =2\Phi\left( \frac{\sqrt{m}k\mathbb{E}[S]}{\sqrt{Var(S)}}\right)-1    }_{Var(\overline{S})=\frac{1}{m}Var(S)}$$
+
+$$\therefore p\leq 2\Phi\left( \frac{k\mathbb{E}[S]}{\sqrt{Var(S)}} \right)-1 =2\Phi\left( \frac{\sqrt{m}k\mathbb{E}[S]}{\sqrt{Var(S)}}\right)-1  $$
+
+$$\Longleftrightarrow \frac{p+1}{2}\leq \Phi\left( \frac{k\mathbb{E}[S]}{\sqrt{Var(S)}} \right) =\underbrace{\Phi\left( \frac{\sqrt{m}k\mathbb{E}[S]}{\sqrt{Var(S)}}\right) }_{\text{Las operaciones realizadas respetan la igualdad}}$$
+
+Tomando $Z_x\ddot{=}$ cuantil del $(\alpha-100)\%$ de una $N(0,1)=\Phi^{-1}(x)$:
+
+$$\Longleftrightarrow Z_{(\frac{p+1}{2})}\leq \left( \frac{k\mathbb{E}[S]}{\sqrt{Var(S)}} \right)\\=\underbrace{\left( \frac{\sqrt{m}k\mathbb{E}[S]}{\sqrt{Var(S)}}\right)}_{Aplicando ~\Phi^{-1} ~de~ ambos ~lados~ respeta~ la ~desigualdad ~pues~ \Phi ~es ~creciente ~\implies \Phi^{-1}~lo~ es }$$
+
+De esta última expresión obtenemos las dos siguientes:
+
+
+- $Var(S)\left[ \frac{ Z_{(\frac{p+1}{2})}}{k\mathbb{E}[S]} \right]^{2}\lesssim m\to$ Esta es una manera de obtener la cantidad **mínima de periodos** $m$ a partir del modelo
+- $Var(\overline{S})\lesssim \left[ \frac{k\mathbb{E}[S]}{Z_{(\frac{p+1}{2})}} \right]^2\to$ si $m=1$ vemos una cota teórica para la varianza del riesgo $S$.
+**Nota:** Recordar que $Var(\overline{S})=\frac{Var(S)}{m}$.
+
+**Nota:** Como $m \in \mathbb{N}$ si la cota inferior tiene decimales, **la mínima $m$** será el techo de la cota.
+
+En concreto, ¿cómo se realiza usando una muestra? Lo primero que debemos realizar es, dado nuestro modelo, calcularemos:
+
+\begin{equation*}
+    \underbrace{m_{min}\ddot{=}\left\lceil \frac{Var(S)}{\mathbb{E}^2[S]}
+    \left[\frac{Z_{(\frac{p+1}{2})}}{k} \right]
+    \right\rceil^2}_{\text{Este cálculo se hará con el modelo teórico que nosotros vamos a probar}}
+\end{equation*}
+
+**Nota:** Como usualmente $k=0.05$ y $p=0.9\Longrightarrow \left[\frac{Z_{(\frac{p+1}{2})}}{k} \right]^2\thickapprox 1082.217$ salvo que se especifiquen otros valores para $(k,p)$.
+
+Donde $\lceil\cdot\rceil$ es la función "parte entera mayor o igual" o simplemente conocida como "techo". De tal manera que el modelo propuesto **impone** una cantidad de periodos necesaria para poder verificar credibilidad.
+
+Si $m$ es la cantidad de datos disponibles **una condición para poder verificar** credibilidad completa (k,p)(Bajo hipótesis de normailidad) es:
+
+\begin{equation*}
+    m_{min}\leq m
+\end{equation*}
+
+**Nota:** Observando la definición de credibilidad completa y de $m_{min}$ se vislumbra que cuando $k\downarrow 0$ o bien $p\uparrow1$ estamos siendo más estrictos con el modelo, y de hecho $m_{min}\uparrow \infty$ lo que significa que necesitaremos más periodos. Recíprocamente cuando $k\uparrow 1$ o bien $p\downarrow0$ necesitamos menos periodos.
+
+De tal manera que si tenemos m datos, usando el modelo teórico $m_{min}$ nos dirá si tenemos la cantidad suficiente de datos para verificar si nuestro modelo tiene **credibilidad completa** (k,p) o no.
+
+Ahora, con base en la teoría desarrollada por la SOA para el examen STAM, notemos que:
+
+$$\frac{Var(S)}{\overline{S}\mathbb{E}[S]}\left[\frac{Z_{(\frac{p+1}{2})}}{k}
+\right]^2\thickapprox \frac{Var(S)}{\mathbb{E}[S]^2} \left[\frac{Z_{(\frac{p+1}{2})}}{k}
+\right]^2= Var(S)\left[\frac{Z_{(\frac{p+1}{2})}}{k\mathbb{E}[S]}
+\right]^2 \leq m$$
+
+De aquí usaremos la muestra para verificar si se **puede** cumplir la **credibilidad completa** (k,p). Esto es:
+
+Si $m_{min}\leq m$ entonces nuestro modelo **puede** satisfacer credibilidad completa (k,p)(bajo hipótesis de normailidad) si:
+\begin{equation*}
+    \underbrace{\frac{Var(S)}{\mathbb{E}[S]} }_{Modelo~ teórico}\underbrace{\left[\quad\quad\quad\frac{Z_{(\frac{p+1}{2})}}{k}
+    \right]^2}_{C.C.~(k,p)~normalidad } \underbrace{\quad\quad\quad\leq m\overline{S}= \sum_{i=1}^mS_i}_{experiencia~de~los~siniestros}
+\end{equation*}
+
+Esto nos da otra condición que deberían satisfacer los datos si deseamos verificar la credibilidad completa (k,p).
+
+De tal manera que para poder si quiera preguntarnos si nuestros datos **pueden** satisfacer credibilidad completa (k,p) deberían satisfacerse las siguientes **condiciones**:
+
+- $m_{min}\leq m\to$ cantidad mínima de periodos requeridos SOA.
+- $\frac{Var(S)}{\mathbb{E}[S]} \left[\frac{Z_{(\frac{p+1}{2})}}{k}\right]^2 \leq \sum_{i=1}^mS_i\to$ Monto total mínimo de reclamaciones experimentadas del riesgo SOA.
+- $Var(\overline{S})\lesssim \left[ \frac{k\mathbb{E}[S]}{Z_{(\frac{p+1}{2})}} \right]^2\to$ Cota superior de la volatilidad de la media de las reclamaciones experimentadas.
+
+Si no se satisfacen 2 y 3 son indicios de replantear el modelo. Más adelante hablamos de qué hacer si falla. Ahora estas **condiciones** las ponemos así porque estamos esperando que $\overline{S}\to \mathbb{E}[S]$ es decir que nuestros datos, en efecto, sean descritos por la teoría. Pero al final $\overline{S}$ se aproximará a su propia media. De tal manera que **aún cumpliéndose las condiciones anteriores no significa que nuestro modelo explique los datos**. Más bien de cumplirse aún falta verificar que en efecto nuestros datos explican el modelo mediante la definición de **credibilidad completa** (k,p) Podemos pensar que las condiciones anteriores son una puerta que necesito abrir para poder ver si mi modelo explica los datos.
+
+En resumen una vez satisfechas las condiciones hay que ver que en efecto $| \overline{S}- \mathbb{E}[S] | \leq k\mathbb{E}[S]$ con probabilidad $\geq p$.
+
+Una posible verificación decisiva puede ser usando bootstrap para mostrar que se cumpla la definición de **credibilidad completa**  (k,p).
+
+Lo ideal es primero verificar las **condiciones** y posteriormente esto.
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("Imágenes/boot.PNG", error=FALSE)
+```
+
+Equivalentemente decimos que $\overline{S}$ cumple **credibilidad completa**  (k,p) bajo hipótesis de normalidad con nuestro modelo teórico.
+
+La idea es sencilla. Pensemos entonces que tenemos una muestra aleatoria $\underline{S}_{m}= \{S_{i}, S_{2},..., {S_m} \}$. Ahora, si esta muestra cumpliera la definición de **credibilidad completa** con (k, p) entonces:
+
+\begin{eqnarray*}
+    \mathbb{P} \left[| \overline{S}-\mathbb{E}[S]  |  \leq k \quad \mathbb{E}[S] \right]& \geq p
+\end{eqnarray*}
+
+Lo que haremos es verificar que esto sucede en $n$ ensayos realizados a partir de la primera muestra.
+
+Lo que haremos será muestrear con reemplazo de $\underline{S}$ y de cada una de estas muestras veremos si $| \overline{S}-\mathbb{E}[S]  |  \leq k \quad \mathbb{E}[S]$ o no. Es decir, tendremos $\{ \underline{ S }^{(i)}_m \}_{i=1}^{n}$  muestras con reemplazo de  $\underline{S}_m$  y luego:
+
+\begin{eqnarray*}
+    \underline{ S   }^{(1)} &\Rightarrow& \quad \textit{Calculamos su promedio y lo llamamos} \quad  \overline{ S   }_{m}^{(1)}\\
+    \underline{ S   }^{(2)} &\Rightarrow& \quad \textit{Calculamos su promedio y lo llamamos} \quad  \overline{ S   }_{m}^{(2)}\\
+    \vdots \\
+    \underline{ S   }^{n} &\Rightarrow& \quad \textit{Calculamos su promedio y lo llamamos} \quad \overline{ S   }_{m}^{n}\\
+\end{eqnarray*}
+
+Teniendo así, una muestra de tamaño $n$ de $\{\underline{S}^{(i)}_m \}_{i=1}^{n}$ para cada una de estas estadísticas podemos calcular: $x_{i}= \mathbb{I}\{ | \overline{S}_m-\mathbb{E}[S]  |  \leq k \quad \mathbb{E}[S]\}$ y entonces si $\bar{x}=\displaystyle\frac{éxitos}{ensayos} \geq p$, tendremos que el modelo satisface **c.c** (k,p) por **bootstrap**.
+
+
+- Cuando no hay credibilidad completa hay que replantear el modelo.
+- Si ${m_{mín}} > m ( 1))$ entonces podemos ver la siguiente alternativa.
+
+
+### Credibilidad Parcial
+
+Cuando no se obtiene credibilidad completa, por ejemplo cuando no tenemos la cantidad de periodos mínima para obtener este criterio obtenemos **credibilidad parcial**. Para esto, tomamos 
+$\alpha \in (0,1]$ y proponemos la combinación convexa del estimador de $\mathbb{E}[S]$:
+
+\begin{eqnarray*}
+    \alpha \overline{S}+ (1- \alpha) \mathbb{E}[S] \quad \textit{con Factor de credibilidad}\quad \ddot{=} \alpha \in (0,1)
+\end{eqnarray*}
+
+Mediante esta expresión se le otorga **credibilidad completa** a una parte de la media muestral $\overline{S}$ y el complemento a $\mathbb{E}[S]$. Es decir:
+
+**Definición:**
+
+Sean k, p, $\alpha \in (0,1)$ tres números fijos. Diremos que $\overline{S}$ tiene **credibilidad parcial** (k, p, $\alpha$) si:
+
+\begin{eqnarray*}
+  \mathbb{P} \left[| \alpha \overline{S}+(1- \alpha)\mathbb{E}[S]  -\mathbb{E}[S] |  \leq k \quad \mathbb{E}[S] \right]& \geq p\\
+\end{eqnarray*}
+
+Sin embargo, esta definición se vuelve irrelevante cuando se vislumbra que:
+
+\begin{eqnarray*}
+    p&\leq& \mathbb{P} \left[| \alpha \overline{S}+(1- \alpha)\mathbb{E}[S]  -\mathbb{E}[S] |  \leq k \quad \mathbb{E}[S] \right]\quad \textit{¿Qué pasa si $\alpha \equiv 0$?}\\
+  &=& \mathbb{P} \left[\alpha | \overline{S}- \mathbb{E}[S]|  \leq k \quad \mathbb{E}[S] \right]\\
+  &=& \mathbb{P} \left[| \overline{S}- \mathbb{E}[S]|  \leq \displaystyle\frac{k}{\alpha} \quad \mathbb{E}[S] \right]\\
+\end{eqnarray*}
+
+Por lo tanto:
+
+\begin{eqnarray*}
+    p\leq \mathbb{P} [| \alpha \overline{S}+(1- \alpha)\mathbb{E}[S]  -\mathbb{E}[S] |  \leq k \quad \mathbb{E}[S]]\\
+    = \mathbb{P} [| \overline{S}- \mathbb{E}[S]|  \leq \displaystyle\frac{k}{\alpha} \quad \mathbb{E}[S]]\\
+\end{eqnarray*}
+
+Es decir: 
+
+**Credibilidad parcial** (k, p, $\alpha$) $\Leftrightarrow$ **credibilidad completa** $\left(\displaystyle\frac{k}{\alpha}, p\right)$.
+
+Como $\alpha\in(0,1] \Rightarrow \dfrac{k}{\alpha}\geq k$ y esto permite un rango de error mayor con **credibilidad parcial** que con **credibilidad completa** con la misma (k, p).
+
+### Credibilidad Parcial bajo Hipótesis de Normalidad
+
+Como ya vimos, **credibilidad parcial** no es más que tomar **credibilidad total** pero modificando una de sus componentes. Por lo que bajo el supuesto de normalidad asintótica, para **credibilidad parcial**  tenemos que:
+
+\begin{equation*}
+    Var(S) = \left[  \displaystyle\frac{ z_{\left(\frac{p+1}{2}\right)}  }{\displaystyle\frac{k}{\alpha}\mathbb{E}[S]}  \right]^{2} \lesssim m \quad ; \quad Var(\overline{S}) \lesssim \left[  \displaystyle\frac{\displaystyle\frac{k}{\alpha}\mathbb{E}[S] }{z_{\left(\frac{p+1}{2}\right)}}  \right]^{2} 
+\end{equation*}
+
+**Nota:** Observemos que el **Factor de credibilidad** justo hace menos estricta la condición de **credibilidad completa**.
+
+Las interpretaciones son idénticas al caso que ya vimos con **credibilidad total**. El punto interesante aquí es que si el tamaño de muestra (m) **NO** fuese suficientemente grande pero fijo y conocido, entonces podemos calcular el **Factor de credibilidad** de la información que tenemos y el modelo propuesto como:
+
+\begin{equation*}
+ \alpha= \left[  \displaystyle\frac{k \cdot \mathbb{E}[S] \displaystyle\sqrt{m} }{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(S)}}  \right]= \left[  \displaystyle\frac{k \cdot \mathbb{E}[S] }{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(\overline{S})}}  \right]
+\end{equation*}
+
+**Nota:** Si m es lo suficientemente grande $\Rightarrow$ $\alpha$ puede ser mayor a uno. Esto pues precisamente va alcanzando **credibilidad completa**. Con la finalidad de dar una versión generalizada del **Factor de credibilidad** tenemos que:
+
+\begin{eqnarray*}
+    \alpha&=& mín \left \{ \underbrace{{\displaystyle\frac{k \cdot \mathbb{E}[S] \displaystyle\sqrt{m} }{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(S)}}}}_\textit{Usaremos este} = \displaystyle\frac{k \cdot \mathbb{E}[S] }{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(\overline{S})}},1 \right \} 
+\end{eqnarray*}
+
+De aqui notamos que:
+
+\begin{equation*}
+    \displaystyle\frac{k \cdot \mathbb{E}[S] \displaystyle\sqrt{m} }{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(S)}}
+    =\displaystyle\frac{ \displaystyle\sqrt{m} }{ \displaystyle\frac{z_{\left(\frac{p+1}{2}\right)} \displaystyle\sqrt{Var(S)}}{k \cdot \mathbb{E}[S]}} 
+    = \displaystyle\sqrt{\displaystyle\frac{  m   }{ \displaystyle\frac{Var(S)}{\mathbb{E}^{2}[S]}       \left[ \displaystyle\frac{z_{\left(\frac{p+1}{2}\right)}}{k}  \right]^{2}}}
+\end{equation*}
+
+Con base en la teoría desarrollada por la SAA para el examen STAM, tendremos entonces lo siguiente:
+
+Dependiendo de la cantidad de información que se tenga, el número anterior se calcula de la siguiente manera:
+    
+\begin{eqnarray*}
+    \displaystyle\sqrt{\displaystyle\frac{  m   }{ \displaystyle\frac{Var(S)}{\mathbb{E}^{2}[S]}       \left[ \displaystyle\frac{z_{\left(\frac{p+1}{2}\right)}}{k}  \right]^{2}}}&\approx& \displaystyle\sqrt{\displaystyle\frac{  m\cdot \overline{S}  }{ \displaystyle\frac{Var(S)}{\mathbb{E}[S]}       \left[ \displaystyle\frac{z_{\left(\frac{p+1}{2}\right)}}{k} \right]^{2}}}
+\end{eqnarray*}
+    
+**Nota:** En esta expresión el numerador se calcula con la muestra y el denominador con el modelo teórico.
+    
+**Nota:** Si no se tiene muestra, de hecho no tiene sentido invocar credibilidad. Sin embargo en ejercicios 100\% teóricos donde se solicita el cálculo del **Factor de credibilidad** **pero no se da una muestra**, se debe tomar $\alpha=1$.
+
+Ahora, existen diversas propuestas de diferentes autores de cómo estimar/obtener el **Factor de credibilidad**; Nosotros nos centraremos en la metodología prouesta por la SOA.
+
+Usando la teoría desarrollada por la SOA tenemos que:
+
+Para invocar credibilidad parcial (k, p, $\alpha$) (Bajo el supuesto de normalidad), el cálculo del **Factor de credibilidad** se hace de la siguiente manera:
+
+\begin{eqnarray*}
+    \alpha&=& mín \left \{ \displaystyle\frac{\textit{"Información disponible"}}{\textit{"Información necesaria para credibilidad completa"}}\right\} 
+\end{eqnarray*}
+
+Donde:
+
+- $\textrm{"Información disponible"}$. Es el numerador de las expresiones anteriores y se obtiene dependiendo de la muestra dada (o bien si no se cuenta con muestra, se hace teórica).
+- $\textrm{"Información necesaria para credibilidad completa"}$. Es el denominador de las expresiones anteriores y se obtiene con el modelo propuesto. 
+
+Las cosas pueden ponerse más interesantes dependiendo si $S$ es un modelo colectivo, algunos de los cálculos con los que se verifican o se obtienen ciertos factores tanto para credibilidad completa o parcial se modifican dependiendo de la $\textrm{"Información disponible"}$.
+
+**Esto se hace con la finalidad de explotar los datos** y la experiencia obtenida de la muestra de la forma más adecuada posible. Aunque de momento, vamos a tratar la credibilidad como hasta este punto.
+
+### Ajuste de primas con credibilidad clásica
+
+Finalmente llegamos al objetivo principal de esta sección; recordemos que la finalidad de la teoría de la credibilidad es dar verosimilitud al modelo que estamos proponiendo con base en el histórico que tenemos.
+
+En el caso en el que nuestro modelo cumpla **credibilidad completa**, como su nombre lo indica, nuestro modelo funciona correctamente a los niveles (k, p), por lo que **no es necesario hacer un ajuste al modelo de prima de riesgo**. Sin embargo, se acostumbra dar más peso a la información recolectada y con base en esto tener la nueva prima. Esto significa:
+
+\begin{equation*}
+    \text{credibilidad completa } (k, p) \Rightarrow \text{Prima de riesgo ajustada } \ddot{=} \overline{S} \underbrace{\approx}_{(k, p)} \mathbb{E}[S]. 
+\end{equation*}
+
+**Nota:** Recuerda que buscamos $k \approx 0$ y  $p \approx 1$. Sin ser exactamente iguales.
+
+Por otro lado, en el caso en que tengamos **credibilidad parcial** $(k, p, \alpha)$, entonces **realizamos un ajuste a la prima** y de hecho podemos considerar modificar el modelo propuesto, si $\alpha \approx0$ o si el número de periodos con los que contamos es aún muy pequeño con respecto a la cota inferior de m. El ajuste de la prima en este caso será:
+
+\begin{equation*}
+    \text{credibilidad parcial } (k, p, \alpha) \Rightarrow \text{Prima de riesgo ajustada } \ddot{=} \alpha \overline{S}+(1-\alpha)\mathbb{E}[S] \underbrace{\approx}_{(k, p, \alpha)}\mathbb{E}[S].
+\end{equation*}
+
+**Nota:** No queremos que $\alpha \approx 0$ pues hacemos que el modelo ajuste a los datos no a sí mismo.
+
+
+
+
+
+
+
+
+
+
+
+
