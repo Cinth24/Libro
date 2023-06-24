@@ -23,7 +23,7 @@
 <meta name="author" content="Cinthya Denisse González Mendoza" />
 
 
-<meta name="date" content="2023-06-19" />
+<meta name="date" content="2023-06-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -166,10 +166,10 @@
 <li class="chapter" data-level="" data-path="severidad-combinacion-de-coberturas.html"><a href="severidad-combinacion-de-coberturas.html#quitando-monto-máximo-de-beneficio-uinfty"><i class="fa fa-check"></i>Quitando Monto máximo de beneficio: <span class="math inline">\(u=\infty\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por pérdida y por pago)</a><ul>
-<li class="chapter" data-level="7.1" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
-<li class="chapter" data-level="7.2" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
-<li class="chapter" data-level="" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por perdida y por pago)</a><ul>
+<li class="chapter" data-level="7.1" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
+<li class="chapter" data-level="7.2" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
+<li class="chapter" data-level="" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="severidad-anexo.html"><a href="severidad-anexo.html"><i class="fa fa-check"></i><b>8</b> Severidad Anexo</a><ul>
@@ -231,6 +231,12 @@
 <li class="chapter" data-level="15.1.5" data-path="credibilidad.html"><a href="credibilidad.html#credibilidad-parcial-bajo-hipótesis-de-normalidad"><i class="fa fa-check"></i><b>15.1.5</b> Credibilidad Parcial bajo Hipótesis de Normalidad</a></li>
 <li class="chapter" data-level="15.1.6" data-path="credibilidad.html"><a href="credibilidad.html#ajuste-de-primas-con-credibilidad-clásica"><i class="fa fa-check"></i><b>15.1.6</b> Ajuste de primas con credibilidad clásica</a></li>
 </ul></li>
+<li class="chapter" data-level="15.2" data-path="credibilidad.html"><a href="credibilidad.html#enfoque-bayesiano"><i class="fa fa-check"></i><b>15.2</b> Enfoque bayesiano</a></li>
+<li class="chapter" data-level="15.3" data-path="credibilidad.html"><a href="credibilidad.html#teorema-de-bayes"><i class="fa fa-check"></i><b>15.3</b> Teorema de Bayes</a></li>
+<li class="chapter" data-level="15.4" data-path="credibilidad.html"><a href="credibilidad.html#familias-conjugadas"><i class="fa fa-check"></i><b>15.4</b> Familias conjugadas</a></li>
+<li class="chapter" data-level="15.5" data-path="credibilidad.html"><a href="credibilidad.html#cálculo-bayesiano-de-primas-de-seguros"><i class="fa fa-check"></i><b>15.5</b> Cálculo Bayesiano de primas de seguros</a><ul>
+<li class="chapter" data-level="" data-path="credibilidad.html"><a href="credibilidad.html#cómo-modelar-un-riesgo-para-obtener-una-prima-de-credibilidad-bayesiana"><i class="fa fa-check"></i>¿Cómo modelar un riesgo para obtener una prima de credibilidad Bayesiana?</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -252,7 +258,7 @@
 <div id="header">
 <h1 class="title">Teoría del Riesgo</h1>
 <p class="author"><em>Cinthya Denisse González Mendoza</em></p>
-<p class="date"><em>2023-06-19</em></p>
+<p class="date"><em>2023-06-24</em></p>
 </div>
 <div id="conceptos-básicos-y-preeliminares" class="section level1 hasAnchor">
 <h1><span class="header-section-number">Capítulo 1</span> Conceptos básicos y preeliminares<a href="index.html#conceptos-básicos-y-preeliminares" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -355,7 +361,7 @@
 <p>El problema puede ponerse tan complicado como se desee, sin embargo y a priori podemos proponer:</p>
 <p><span class="math inline">\(X \ddot{=}\)</span> monto a pagar si el coche sufre un siniestro</p>
 <p><span class="math inline">\(X \sim Unif(0,595000)\)</span></p>
-<p><img src="Ima%CC%81genes/recta.png" width="100%" /></p>
+<p><img src="Imagenes/recta.png" width="100%" /></p>
 </div>
 </div>
 </div>
@@ -373,7 +379,7 @@
     Var(X) &amp;=&amp; \frac{1}{\lambda^2}.\\
     M(t)&amp;=&amp;\frac{\lambda}{\lambda-t}\, \mbox{para}\  t &lt; \lambda.\\
 \end{eqnarray*}\]</span>
-<p><img src="Ima%CC%81genes/Dist_exponencial.png" width="100%" /></p>
+<p><img src="Imagenes/Dist_exponencial.png" width="100%" /></p>
 </div>
 <div id="gamma" class="section level3 unnumbered hasAnchor">
 <h3>Gamma<a href="index.html#gamma" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -387,7 +393,7 @@
     Var(X)&amp;=&amp;\frac{n}{\lambda^2}\\
     M(t)&amp;=&amp;\left[ \frac{\lambda}{(\lambda -t)}\right]^n\ \lambda&gt;0\ y\ n\ \mbox{entero}.
 \end{eqnarray*}\]</span></p>
-<p><img src="Ima%CC%81genes/Distribucio%CC%81n%20Gama.png" width="100%" /></p>
+<p><img src="Imagenes/DistribucionGama.png" width="100%" /></p>
 </div>
 <div id="log---normal" class="section level3 unnumbered hasAnchor">
 <h3>Log - Normal<a href="index.html#log---normal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -399,7 +405,7 @@
     \mathbb{[X^{n}]}&amp;=&amp; exp\left(n\mu + \frac{n^{2}\sigma^{2}}{2}\right).\\
     Var(X)&amp;=&amp; exp(2\mu + 2\sigma^{2}) - exp(2\mu + \sigma^{2}).\\
 \end{eqnarray*}\]</span>
-<p><img src="Ima%CC%81genes/Distribucio%CC%81n%20Log-Normal.png" width="100%" /></p>
+<p><img src="Imagenes/DistribucionLog-Normal.png" width="100%" /></p>
 </div>
 <div id="weibull" class="section level3 unnumbered hasAnchor">
 <h3>Weibull<a href="index.html#weibull" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -411,7 +417,7 @@
             Var(X) &amp;=&amp; \frac{\Gamma (1+\frac{2}{r})-\Gamma^{2} (1+\frac{1}{r})}{\lambda^{2}}
 \end{eqnarray*}\]</span>
 <p><strong>Nota:</strong> En R está parametrizado con <span class="math inline">\(\frac{1}{\lambda}\)</span>.</p>
-<p><img src="Ima%CC%81genes/Distribucio%CC%81n%20Weibull.png" width="100%" /></p>
+<p><img src="Imagenes/DistribucionWeibull.png" width="100%" /></p>
 </div>
 <div id="burr" class="section level3 unnumbered hasAnchor">
 <h3>Burr<a href="index.html#burr" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -420,7 +426,7 @@
     f(x) &amp;=&amp; \frac{\beta \alpha \theta^{\alpha} x^{\beta-1}}{(x^{\beta} + \theta)^{\alpha + 1}}\ x \geq 0,\ \theta &gt; 0,\ \alpha &gt;0,\ \beta &gt; 0.\\
     \mathbb E (x^{r}) &amp;=&amp; \frac{\theta^{\frac{r}{\beta}}\Gamma( \alpha-\frac{r}{\beta})\Gamma (\frac{r}{\beta +1})}{\Gamma (\alpha)}\ ,\ que\ existe\ si\ r&lt;\alpha\beta
 \end{eqnarray*}\]</span>
-<p><img src="Ima%CC%81genes/Distribucio%CC%81n%20Burr.png" width="100%" /></p>
+<p><img src="Imagenes/DistribucionBurr.png" width="100%" /></p>
 </div>
 <div id="pareto" class="section level3 unnumbered hasAnchor">
 <h3>Pareto<a href="index.html#pareto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -443,7 +449,7 @@
 \end{eqnarray*}\]</span> <span class="math display">\[\begin{eqnarray*}
     \mathbb E(X) &amp;=&amp; \frac{\alpha \theta}{(\alpha - 1)}; \ \mathbb V(X) = \frac{\alpha \theta^{2}}{(\alpha-2)(\alpha - 1)^{2}};\ \mathbb E (X^{r})= \frac{\alpha \theta^{r}}{(\alpha-r)},\ \alpha&gt;r,\ r=1,2,...
 \end{eqnarray*}\]</span>
-<img src="Ima%CC%81genes/Distribucio%CC%81n%20Pareto.png" width="100%" /></p>
+<img src="Imagenes/DistribucionPareto.png" width="100%" /></p>
 <p>El paquete <strong>actuar</strong> de R llama como pareto2 o bien pareto a la distribución aquí marcada como “Pareto”.</p>
 <p><strong>Revisar Script: “Distribuciones asociadas al monto de una pérdida”.</strong></p>
 </div>
@@ -451,7 +457,7 @@
 </div>
 <div id="modelación-del-riesgo" class="section level2 hasAnchor">
 <h2><span class="header-section-number">1.8</span> Modelación del riesgo<a href="index.html#modelación-del-riesgo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="Ima%CC%81genes/Actuario%20f.png" width="100%" /></p>
+<p><img src="Imagenes/Actuariof.png" width="100%" /></p>
 </div>
 <div id="ajuste-de-funciones-de-probabilidad" class="section level2 hasAnchor">
 <h2><span class="header-section-number">1.9</span> Ajuste de funciones de probabilidad<a href="index.html#ajuste-de-funciones-de-probabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -520,7 +526,7 @@ f^{&#39;}_{X}(x_{0})= 0 &amp;\Leftrightarrow&amp; \left[ (n-1)x_{0}^{n-2}e^{-\la
 x_{0}&amp;=&amp; \frac{n-1}{\lambda}
 \end{eqnarray*}\]</span>
 <p>Entonces si se tiene un conjunto de datos <span class="math inline">\(\{d_{i}\}_{i=1}^{n}\)</span> y pudiera trazar su función de densidad empírica; si yo sospecho que esos datos tienen una distribución asociada <span class="math inline">\(Gamma(n, \lambda)\)</span> entonces su moda debería verse algo así:</p>
-<p><img src="Ima%CC%81genes/Dist_Gamma.png" width="100%" /></p>
+<p><img src="Imagenes/Dist_Gamma.png" width="100%" /></p>
 <p>De tal manera que al ver esto, podamos sospechar que la información que tenemos, realmente proviene de la distribución que nosotros propusimos.</p>
 <p>Existen distribuciones que tienen dos o más modas, a aquellas que tienen dos son las llamadas distribuciones bimodales.</p>
 <p>Es posible que una distribución de este estilo sea provocada por una mezcla de variables aleatorias.</p>
@@ -529,7 +535,7 @@ x_{0}&amp;=&amp; \frac{n-1}{\lambda}
 f_{Z}(t)&amp;=&amp; af_{X}(t)+bf_{Y}(t)
 \end{eqnarray*}\]</span>
 <p>Dando como resultado que la función de densidad <span class="math inline">\(Z\)</span> tenga un comportamiento similar al siguiente:</p>
-<p><img src="Ima%CC%81genes/Mezclas.png" width="100%" /></p>
+<p><img src="Imagenes/Mezclas.png" width="100%" /></p>
 <p><strong>Script: “Mezclas”</strong></p>
 </div>
 </div>
@@ -561,11 +567,11 @@ f_{Z}(t)&amp;=&amp; af_{X}(t)+bf_{Y}(t)
 \end{eqnarray*}\]</span>
 <p>Dado un valor de <span class="math inline">\(\alpha\)</span> entonces:</p>
 <p>Si <span class="math inline">\(\alpha&gt;\)</span> 0, entonces la distribución es “asimétrica positiva” (o “asimétrica a la derecha”).</p>
-<p><img src="Ima%CC%81genes/asipos.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/asipos.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Si <span class="math inline">\(\alpha\)</span>=0, entonces la distribución es “simétrica”.</p>
-<p><img src="Ima%CC%81genes/simetria.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/simetria.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Si <span class="math inline">\(\alpha&lt;\)</span> 0, entonces la distribución es “asimétrica negativa (o”asimétrica a la izquierda).</p>
-<p><img src="Ima%CC%81genes/Asineg.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/Asineg.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="coeficiente-de-kurtosis" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.10.3</span> Coeficiente de Kurtosis<a href="index.html#coeficiente-de-kurtosis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -590,11 +596,11 @@ f_{Z}(t)&amp;=&amp; af_{X}(t)+bf_{Y}(t)
 \end{eqnarray*}\]</span>
 <p>Donde <span class="math inline">\(K\)</span> también tiene una interpretación gráfica como veremos a continuación:</p>
 <p>Si <span class="math inline">\(K&gt;\)</span> 3, entonces la distribución es <strong>más apuntada</strong> y con <strong>colas menos gruesas</strong> que la normal estándar.</p>
-<p><img src="Ima%CC%81genes/lepto.png" width="30%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/lepto.png" width="30%" style="display: block; margin: auto;" /></p>
 <p>Si <span class="math inline">\(K\)</span>=3, entonces la distribución tiene una forma apuntada y con <strong>colas similares la normal estándar</strong>.</p>
-<p><img src="Ima%CC%81genes/meso.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/meso.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Si <span class="math inline">\(K&lt;\)</span> 3, entonces la distribución es <strong>menos apuntada</strong> y con <strong>colas más gruesas</strong> que la normal estándar.</p>
-<p><img src="Ima%CC%81genes/plati.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/plati.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="función-de-distribución-empírica" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.10.4</span> Función de distribución empírica<a href="index.html#función-de-distribución-empírica" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -604,12 +610,12 @@ F_n(t) \ddot{=} \frac{\sum_{i=1}^{n} \mathbb{I}(x_{i} \leq t)}{n}
 = \frac{\#\{ x_{i}: x_{i} \leq t\}}{n}
 \end{equation*}\]</span>
 <p>Véase:</p>
-<img src="Ima%CC%81genes/Func_dist_empirica.png" width="100%" />
+<img src="Imagenes/Func_dist_empirica.png" width="100%" />
 <p style="text-align: center">
 Figura 1. <a href="https://www.youtube.com/watch?v=iN3BDlmfdT0" class="uri">https://www.youtube.com/watch?v=iN3BDlmfdT0</a>
 </p>
 <p>Teniendo nuestros datos, la distribución empírica se ve de la siguiente manera:</p>
-<p><img src="Ima%CC%81genes/Distribucion%20empirica.png" width="100%" /></p>
+<p><img src="Imagenes/Distribucionempirica.png" width="100%" /></p>
 </div>
 <div id="cuantiles" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.10.5</span> Cuantiles<a href="index.html#cuantiles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -744,7 +750,7 @@ F_{X}(t)= \alpha &amp;\Rightarrow&amp; t=q_{X}(\alpha)
 <h4>Ejemplo:<a href="index.html#ejemplo-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>De nuestro ejemplo anterior, el EMV para <span class="math inline">\(\tau (\lambda)\)</span> es <span class="math inline">\(\tau\left(\frac{n}{\overline{X}}\right)\)</span>.</p>
 <p><strong>Un vídeo donde se explica a grandes rasgos lo anterior lo podrán ver en el siguiente enlace:</strong></p>
-<img src="Ima%CC%81genes/Video_FV.png" width="100%" />
+<img src="Imagenes/Video_FV.png" width="100%" />
 <p style="text-align: center">
 <a href="https://www.youtube.com/watch?v=zPSj0ltrBoc" class="uri">https://www.youtube.com/watch?v=zPSj0ltrBoc</a>
 </p>
@@ -779,7 +785,7 @@ D^- &amp;=&amp; \mathop{máx}\limits_{1\leq x\leq n}\left\{z_{(i)}-\frac{(i-1)}{
 D&amp;=&amp; máx\{D^+,D^-\}
 \end{eqnarray*}\]</span> con <span class="math inline">\(z_{(i)}=F(x_i)\)</span> y <span class="math inline">\(z_{(i)}\)</span> el i-ésimo elemento en la muestra ordenada de las <span class="math inline">\(z&#39;_is\)</span>.</p>
 <p>Esta prueba se usa para datos desagregados y para variables aleatorias continuas, i.e.,<span class="math inline">\(F_0\)</span> es una función de distribución continua <span class="math inline">\(F_n\)</span> es la función de distribución empírica, y se calcula con los datos reales.</p>
-<p><img src="Ima%CC%81genes/Detalle%20de%20las%20diferencias.png" width="100%" /></p>
+<p><img src="Imagenes/Detalledelasdiferencias.png" width="100%" /></p>
 </div>
 <div id="prueba-anderson-darling-a-d" class="section level4 hasAnchor">
 <h4><span class="header-section-number">1.12.2.2</span> Prueba Anderson-Darling (A-D)<a href="index.html#prueba-anderson-darling-a-d" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -828,17 +834,17 @@ A^2&amp;=&amp; n\displaystyle \int_0^1\frac{[F_n(x)-F_0(x)]^2}{F_0(x)[1-F_0(x)]}
 <div id="región-de-rechazo-y-no-rechazo" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.13.1</span> Región de Rechazo y no rechazo:<a href="index.html#región-de-rechazo-y-no-rechazo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En general, podríamos ver gráficamente una prueba de hipótesis asi:</p>
-<p><img src="Ima%CC%81genes/p-value1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/p-value1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Dado un estadístico de prueba, este podría caer en la <strong>región de “aceptación” (no-rechazo)</strong> o en la <strong>región de rechazo</strong>.</p>
-<p><img src="Ima%CC%81genes/p-value2.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/p-value2.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Eso pues precisamente si el estadístico de prueba (Z) es muy grande, es porque lo que supongo <span class="math inline">\((H_0)\)</span> comente muchos errores.</p>
 <p>Bueno, pues si fijamos que la región de rechazo tenga un área del <span class="math inline">\(\alpha=5\%\)</span> (como usualmente se toma) entonces tendremos algo así:</p>
-<p><img src="Ima%CC%81genes/p-value3.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/p-value3.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Si el p-value es la probabilidad de ver un valor más extremo que el estadístico de prueba (estadística observada) entonces existen básicamente dos casos:</p>
 <ul>
 <li>p-value <span class="math inline">\(&gt; \alpha\)</span></li>
 </ul>
-<p><img src="Ima%CC%81genes/p-value4.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/p-value4.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Como p-value <span class="math inline">\(&gt; \alpha\)</span> en el fondo estamos diciendo que el estadístico de prueba no fue tan grande y por tanto la hipótesis nula es estadísticamente correcta al coincidir lo suficiente con lo observado.</p>
 <span class="math display">\[\begin{eqnarray*}
 \therefore p-value &gt; \alpha &amp;\Leftrightarrow&amp;\quad \text{``El estadístico de prueba cae en la región de no-rechazo&#39;&#39;}\\ &amp;\Leftrightarrow&amp; \quad\text{No Rechazamos $H_0$ a un nivel de significancia $\alpha$ (confianza 1-$\alpha)$}
@@ -846,7 +852,7 @@ A^2&amp;=&amp; n\displaystyle \int_0^1\frac{[F_n(x)-F_0(x)]^2}{F_0(x)[1-F_0(x)]}
 <ul>
 <li>p-value <span class="math inline">\(&lt; \alpha\)</span></li>
 </ul>
-<p><img src="Ima%CC%81genes/p-value5.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="Imagenes/p-value5.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Este es el caso contrario, por tanto, lo que estamos asumiendo como <span class="math inline">\(H_0\)</span> no está viéndose reflejado en los datos observados.</p>
 <span class="math display">\[\begin{eqnarray*}
 \therefore p-value &lt; \alpha &amp;\Leftrightarrow&amp;\quad \text{&quot;El estadístico de prueba cae en la región de rechazo&#39;&#39;}\\ &amp;\Leftrightarrow&amp; \quad\text{Rechazamos $H_0$ a un nivel de significancia $\alpha$ (confianza 1-$\alpha)$}

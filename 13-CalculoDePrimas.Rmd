@@ -5,7 +5,7 @@ A lo largo de la carrera hemos estudiado diversas formas de calcular una prima d
 $$ (\$)(1+i)^{-{T_x}}=(\$)(V^{{T_x}})= (\$){\cdot e^{-\delta {T_x}}} $$
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/flujo.PNG", error=FALSE)
+knitr::include_graphics("Imagenes/flujo.PNG", error=FALSE)
 ```
 
 $V^{T_x}$ es v.a.
@@ -21,7 +21,7 @@ Por otro lado el asegurado se comprometía a pagar una **Prima** pago que se har
 
 $${P}\bar{a}_{{T_x}} ={P} \left(\frac{1-V^{{T_x}}}{i}\right) $$
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/TimeLine.png", error=FALSE)
+knitr::include_graphics("Imagenes/TimeLine.png", error=FALSE)
 ```
 
 y generalizando esto al **caso continuo**, la $v.a.$ está dada por:
@@ -166,7 +166,7 @@ $b)$ Es cóncava.
 Lo que hace una función de utilidad es brindar una manera en que la entidad/individuo que está expuesto a un evento fortuito observa las cosas. Dicho de alguna forma, es la herramienta que nos permite darle peso a algo desde nuestra perspectiva, nos permite indicar preferencias, en este caso, al riesgo.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/calculo_primas1.png", error=FALSE)
+knitr::include_graphics("Imagenes/calculo_primas1.png", error=FALSE)
 ```
 
 De acuerdo al principio de utilidad cero, la prima que debemos cobrar es el número real $P$=$P^{(vc)}(S)$ tal que: 
@@ -267,7 +267,7 @@ Existen más y diversas formas de calcular la prima correspondiente  a un riesgo
 _Propiedades generales_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. a.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_a.png", error=FALSE)
 ```
 
 _Figura 1:_ https://www.youtube.com/watch?v=QSqioUk8di8
@@ -276,7 +276,7 @@ _Figura 1:_ https://www.youtube.com/watch?v=QSqioUk8di8
 _¿Por qué: $P \geq \mathbb{E}[S]$ ?_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. b.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_b.png", error=FALSE)
 ```
 
 _Figura 2:_ https://www.youtube.com/watch?v=Wk4rj2X5QKU
@@ -284,7 +284,7 @@ _Figura 2:_ https://www.youtube.com/watch?v=Wk4rj2X5QKU
 _Principio de valor esperado_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. c.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_c.png", error=FALSE)
 ```
 
 _Figura 3:_ https://www.youtube.com/watch?v=4rgG755GrzI
@@ -292,7 +292,7 @@ _Figura 3:_ https://www.youtube.com/watch?v=4rgG755GrzI
 _Principio de la Varianza_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. d.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_d.png", error=FALSE)
 ```
 
 _Figura 4:_ https://www.youtube.com/watch?v=8Gueak3JbmQ
@@ -300,7 +300,7 @@ _Figura 4:_ https://www.youtube.com/watch?v=8Gueak3JbmQ
 _Principio de la desviación estándar_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. e.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_e.png", error=FALSE)
 ```
 
 _Figura 5:_ https://www.youtube.com/watch?v=0PO_1paX6q0
@@ -308,7 +308,7 @@ _Figura 5:_ https://www.youtube.com/watch?v=0PO_1paX6q0
 _Principio de utilidad cero_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. f.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_f.png", error=FALSE)
 ```
 
 _Figura 6:_ https://www.youtube.com/watch?v=FTjJNnmtXEQ
@@ -316,7 +316,7 @@ _Figura 6:_ https://www.youtube.com/watch?v=FTjJNnmtXEQ
 _Un caso particular: Principio exponencial_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. g.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_g.png", error=FALSE)
 ```
 
 _Figura 7:_ https://www.youtube.com/watch?v=G-kdmOvGQaM
@@ -324,7 +324,7 @@ _Figura 7:_ https://www.youtube.com/watch?v=G-kdmOvGQaM
 _Similar al de utilidad cero, tenemos: Principio de valor medio_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. h.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_h.png", error=FALSE)
 ```
 
 _Figura 8:_ https://www.youtube.com/watch?v=zZBLfA0smzM
@@ -332,7 +332,7 @@ _Figura 8:_ https://www.youtube.com/watch?v=zZBLfA0smzM
 _Usando una idea similar al VaR para la prima: Principio del porcentaje_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. i.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_i.png", error=FALSE)
 ```
 
 _Figura 9:_ https://www.youtube.com/watch?v=fB9YgXOfWJI
@@ -341,7 +341,7 @@ Algunas metodologías más elegantes:
 
 _Principio Esscher_
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. j.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_j.png", error=FALSE)
 ```
 
 _Figura 10:_ https://www.youtube.com/watch?v=GrLNmeDKbec
@@ -349,7 +349,7 @@ _Figura 10:_ https://www.youtube.com/watch?v=GrLNmeDKbec
 _Principio de riesgo ajustado_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/14. k.png", error=FALSE)
+knitr::include_graphics("Imagenes/14_k.png", error=FALSE)
 ```
 
 _Figura 11:_ https://www.youtube.com/watch?v=qUnqBKJBXPI

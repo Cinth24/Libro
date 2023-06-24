@@ -1,7 +1,7 @@
 # Modelo colectivo: Formula de Panjer
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/12. HarryP.png", error=FALSE)
+knitr::include_graphics("Imagenes/12_HarryP.png", error=FALSE)
 ```
 
 _Figura 1: Harry Panjer_
@@ -11,13 +11,13 @@ La **fórmula de Panjer**   es un resultado que proporciona una expresión exact
 Primeramente, supondremos que el número de reclamaciones de un riesgo ($S$) en el modelo colectivo, es decir, **su frecuencia ($N$) es de clase (a,b,0)** y recordemos las distribuciones provenientes de esta clase:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/TablaDist.png", error=FALSE)
+knitr::include_graphics("Imagenes/TablaDist.png", error=FALSE)
 ```
 
 _Cudro 1: Distribuciones de la clase (a,b,0)_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/12. Formula_Panjer.png", error=FALSE)
+knitr::include_graphics("Imagenes/12_Formula_Panjer.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=ul2j6FhifCw
@@ -40,7 +40,7 @@ _Notación:_
   Resultados preliminares:
   
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/12. Formula_PR.png", error=FALSE)
+knitr::include_graphics("Imagenes/12_Formula_PR.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=vVBwC-oLnqg
@@ -71,7 +71,7 @@ _Nota:_ Bajo la notación anterior, el resultado se expresa como:
 La demostración de esta fórmula se muestra también en el siguiente vídeo: 
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/12. Formula_P.png", error=FALSE)
+knitr::include_graphics("Imagenes/12_Formula_P.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=r52-snnbVNU
@@ -89,7 +89,7 @@ g_{3}&=& \left( a + \displaystyle\frac{b}{3} f_{1}g_{2}  \right)+\left( a + \dis
 Como un ejemplo consideremos el caso cuando $N$ sigue una distribución Poisson de parámetro $\lambda=3.5$, y el monto de las reclamaciones tiene la siguiente función de densidad.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Tabli.png", error=FALSE)
+knitr::include_graphics("Imagenes/Tabli.png", error=FALSE)
 ```
 
 Entonces la formula de Panjer produce la función de probabilidad para $S$ que se muestra en la Figura  a continuación:
@@ -169,7 +169,7 @@ $$
 Por facilidad del lector agregamos lo siguiente:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/MC_FormulaPager.png", error=FALSE)
+knitr::include_graphics("Imagenes/MC_FormulaPager.png", error=FALSE)
 ```
 
 _Curso intermedio de probabilidad, L. Rincón, pág:313_
@@ -179,7 +179,7 @@ Por último nos falta ver qué sucede si $S>0$.
 Según el siguiente documento:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/MC_FormulaPager1.png", error=FALSE)
+knitr::include_graphics("Imagenes/MC_FormulaPager1.png", error=FALSE)
 ```
 
 En la página LM-250 hay otra demostración de lo anterior y además, en la página LM-251 se deduce lo siguiente:
@@ -371,7 +371,7 @@ Considerando $f_{0} \doteq \mathbb P[y=0]$ tenemos lo siguiente:
 _Table D.1._ Starting values [$f_{s}(0)$] for recursions
 
 ```{r echo=FALSE, out.width="90%"}
-knitr::include_graphics("Imágenes/Values.png", error=FALSE)
+knitr::include_graphics("Imagenes/Values.png", error=FALSE)
 ```
 
 Son los valores iniciales para $\mathbb P [S=0]$ en cada caso
@@ -449,7 +449,7 @@ Adicionalmente, si la severidad resulta continua, existen diversas maneras de di
 Un vídeo donde se explican algunos detalles más de estos lo podemos ver a continuación:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/FormuPanj.png", error=FALSE)
+knitr::include_graphics("Imagenes/FormuPanj.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.https://www.youtube.com/watch?v=H4ETDaUUvTk

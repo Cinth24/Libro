@@ -11,7 +11,7 @@ Desde el principio se habló de dos conceptos por separado, la frecuencia y la s
 **Considere un conjunto de un número no determinado de contratos de seguros** con vigencia en un periodo de tiempo $[0,T]$ . Este periodo puede corresponder a un año por ejemplo. **Sea $ N$ la variable aleatoria que denota el número de reclamaciones ocurridas en este intervalo, y sean las variables positivas $Y_1,...,Y_N$ los montos de estas reclamaciones**. Gráficamente una posible realización de tal esquema se muestra en la _Figura 1.7_.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/fig1punto7.png", error=FALSE)
+knitr::include_graphics("Imagenes/fig1punto7.png", error=FALSE)
 ```
 
 _Nota:_ 
@@ -29,7 +29,7 @@ $S=\sum_{j=1}^N Y_j$   ~~~~~~~~~~ (1.2)
 Observe que cada sumando es una variable aleatoria y que el número de sumandos es también aleatorio. La suma (1.2) se define como cero cuando $N=0$}. Observe además que **$S$ puede ser una variable aleatoria mixta**, es decir, no ser discreta ni continua, pues cuando los montos de las reclamaciones $Y$ son variables continuas estrictamente positivas, la variable $S$ puede tomar el valor 0 con probabilidad $P( S=0)= P( N =0)> 0$, y puede además tomar cualquier valor en el intervalo $(0,\infty)$ **La ecuación (1.2) representa el modelo colectivo para un contrato de seguros**, cuyas posibles realizaciones **como función del tiempo tienen la forma de la gráfica de la _Figura 1.8_:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/fig1punto8.png", error=FALSE)
+knitr::include_graphics("Imagenes/fig1punto8.png", error=FALSE)
 ```
 
 **A la función de distribución de cada reclamación Y la denotaremos por la
@@ -271,7 +271,7 @@ Nuevamente, esto se da sin importar el soporte de los $Y_{i}´s$ pues una demost
 $S_{1}$ y $S_{2}$ son distribuciones Poisson compuestas con parámetros $\lambda_{1}=3$ y $\lambda_{2}=2$, y función de severidad individual; asumiendo $S_{1} \perp S_{2}$.
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Tablita.png", error=FALSE)
+knitr::include_graphics("Imagenes/Tablita.png", error=FALSE)
 ```
     
 Determine la media y la varianza de $S$.
@@ -331,25 +331,25 @@ Lo siguiente que nos interesa buscar es la manera de obtener probabilidades del 
 A continuación facilitamos algunos vídeos que ayuden al entendimiento del tema anterior.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/11. a.png", error=FALSE)
+knitr::include_graphics("Imagenes/11_a.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=YFKFsSIHod4
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/11. b.png", error=FALSE)
+knitr::include_graphics("Imagenes/11_b.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=uNZiUUW6VaA
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/MC_Bases1.png", error=FALSE)
+knitr::include_graphics("Imagenes/MC_Bases1.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/z73RugHd_cU
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/MC_Bases2.png", error=FALSE)
+knitr::include_graphics("Imagenes/MC_Bases2.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/4g0qQG2gvbU
@@ -378,13 +378,13 @@ Observemos lo siguiente:
 _Ejemplo de densidades de Gamma_
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/ModeloColectivoGamma.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloColectivoGamma.png", error=FALSE)
 ```
 
 _Ejemplo de densidad de S_
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Imagen1.png", error=FALSE)
+knitr::include_graphics("Imagenes/Imagen1.png", error=FALSE)
 ```
 
 Existen algunos riesgos $(S)$ en modelos colectivos que presentan un comportamiento similar al de una densidad Gamma. Es por eso que suena razonable intentar ajustar una densidad Gamma a nuestro modelo. Para esto, intentaremos ajustar una densidad **Gamma trasladada** para buscar ser más exactos en nuestro modelo. Entonces, definiremos $Z\sim Gamma({\beta},{\lambda})$ y tomaremos ${c}\in \mathbb{R}$, de tal manera que se buscará ajustar la variable $G\hspace{0.4em}\ddot{=}\hspace{0.4em}Z+{c}\sim Gamma T({\beta},{\alpha},{c})$ a nuestro riesgo $S$.
@@ -435,7 +435,7 @@ Resolviendo el sistema de ecuaciones:
 Para más de la aproximación Gamma-T:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/MC_Bases3.png", error=FALSE)
+knitr::include_graphics("Imagenes/MC_Bases3.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/veGk-C-m_sk
@@ -457,7 +457,7 @@ Suponiendo que se desea aproximar $\mathbb{P}[n\leq S \leq m]$ con $S$ discreta 
 **Ejemplo Gamma Trasladada:**
 
 ```{r echo=FALSE, out.width="40%"}
-knitr::include_graphics("Imágenes/GammaTras.png", error=FALSE)
+knitr::include_graphics("Imagenes/GammaTras.png", error=FALSE)
 ```
 
 Vamos a estimar en R con una muestra de $S$ los parámetros de la Gamma Trasladada y veamos que en efecto la distribución obtenida ajusta a los datos.

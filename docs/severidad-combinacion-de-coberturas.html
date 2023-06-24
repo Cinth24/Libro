@@ -23,7 +23,7 @@
 <meta name="author" content="Cinthya Denisse González Mendoza" />
 
 
-<meta name="date" content="2023-06-19" />
+<meta name="date" content="2023-06-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="severidad-coberturas.html"/>
-<link rel="next" href="severidad-costo-por-pérdida-y-por-pago.html"/>
+<link rel="next" href="severidad-costo-por-perdida-y-por-pago.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,10 +166,10 @@
 <li class="chapter" data-level="" data-path="severidad-combinacion-de-coberturas.html"><a href="severidad-combinacion-de-coberturas.html#quitando-monto-máximo-de-beneficio-uinfty"><i class="fa fa-check"></i>Quitando Monto máximo de beneficio: <span class="math inline">\(u=\infty\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por pérdida y por pago)</a><ul>
-<li class="chapter" data-level="7.1" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
-<li class="chapter" data-level="7.2" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
-<li class="chapter" data-level="" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por perdida y por pago)</a><ul>
+<li class="chapter" data-level="7.1" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
+<li class="chapter" data-level="7.2" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
+<li class="chapter" data-level="" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="severidad-anexo.html"><a href="severidad-anexo.html"><i class="fa fa-check"></i><b>8</b> Severidad Anexo</a><ul>
@@ -231,6 +231,12 @@
 <li class="chapter" data-level="15.1.5" data-path="credibilidad.html"><a href="credibilidad.html#credibilidad-parcial-bajo-hipótesis-de-normalidad"><i class="fa fa-check"></i><b>15.1.5</b> Credibilidad Parcial bajo Hipótesis de Normalidad</a></li>
 <li class="chapter" data-level="15.1.6" data-path="credibilidad.html"><a href="credibilidad.html#ajuste-de-primas-con-credibilidad-clásica"><i class="fa fa-check"></i><b>15.1.6</b> Ajuste de primas con credibilidad clásica</a></li>
 </ul></li>
+<li class="chapter" data-level="15.2" data-path="credibilidad.html"><a href="credibilidad.html#enfoque-bayesiano"><i class="fa fa-check"></i><b>15.2</b> Enfoque bayesiano</a></li>
+<li class="chapter" data-level="15.3" data-path="credibilidad.html"><a href="credibilidad.html#teorema-de-bayes"><i class="fa fa-check"></i><b>15.3</b> Teorema de Bayes</a></li>
+<li class="chapter" data-level="15.4" data-path="credibilidad.html"><a href="credibilidad.html#familias-conjugadas"><i class="fa fa-check"></i><b>15.4</b> Familias conjugadas</a></li>
+<li class="chapter" data-level="15.5" data-path="credibilidad.html"><a href="credibilidad.html#cálculo-bayesiano-de-primas-de-seguros"><i class="fa fa-check"></i><b>15.5</b> Cálculo Bayesiano de primas de seguros</a><ul>
+<li class="chapter" data-level="" data-path="credibilidad.html"><a href="credibilidad.html#cómo-modelar-un-riesgo-para-obtener-una-prima-de-credibilidad-bayesiana"><i class="fa fa-check"></i>¿Cómo modelar un riesgo para obtener una prima de credibilidad Bayesiana?</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -257,9 +263,9 @@
 <p>Lo que sucede en este tipo de contratos es que la aseguradora pagará cuando un siniestro rebase cierto deducible <strong>d</strong>, y cubrirá todos aquellos gastos que no superen un umbral <strong>u</strong> (monto máximo de beneficio).</p>
 <p>Dicho de otra forma, si un siniestro ocurre, la aseguradora pagará los gastos que ocurran únicamente entre los montos antes establecidos en la póliza <strong>d</strong> y <strong>u</strong>. Todo monto que quede por debajo del deducible o sobre el monto máximo de beneficio será responsabilidad del asegurado.</p>
 <p>Visto de manera gráfica, si suponemos que el monto del siniestro puede ocurrir dentro del intervalo <span class="math inline">\([a,b]\)</span> tendremos:</p>
-<p><img src="Ima%CC%81genes/Cap.6_D-mmb%20I.png" width="100%" /></p>
+<p><img src="Imagenes/Cap_6_D-mmbI.png" width="100%" /></p>
 <p>Consideremos una v.a <span class="math inline">\(X \in [a,b]\)</span> y tomemos <span class="math inline">\(d, u \in [a,b]\)</span> con <span class="math inline">\(d&lt;u\)</span>, el deducible y monto máximo de beneficio respectivamente. Sea $ Y $ la v.a que modela el monto a pagar por parte de la aseguradora en un contrato con estas características para cubrir el siniestro <span class="math inline">\(X\)</span>. La gráfica de <span class="math inline">\(Y\)</span> en términos de los posibles valores de <span class="math inline">\(X\)</span> es:</p>
-<p><img src="Ima%CC%81genes/Cap.6_D-mmb%202.png" width="100%" /></p>
+<p><img src="Imagenes/Cap_6_D-mmb2.png" width="100%" /></p>
 <p>Esto sucede ya que el pago está dado por:</p>
 <p><span class="math display">\[\begin{eqnarray*}
    Y &amp;=&amp; máx\{ min\{X-u\}-d,0 \}\\
@@ -418,10 +424,10 @@ f_{Y}(t)=f_{X}(t+d) \quad \forall \quad t \in (a-d,b-d)\\
 \end{eqnarray*}\]</span></p>
 <p>Pero <span class="math inline">\(Y\)</span> será una variable aleatoria totalmente continua ¿Por qué se quitó el efecto de la parte discreta?</p>
 <p>Antes, cuando <span class="math inline">\(d\in [a,b]\)</span> llevábamos un intervalo con probabilidad de <span class="math inline">\(X\)</span> a un punto:</p>
-<p><img src="Ima%CC%81genes/L1.png" width="100%" /></p>
+<p><img src="Imagenes/L1.png" width="100%" /></p>
 <p>Si hacemos una modificación a esto…</p>
 <p>Cuando <span class="math inline">\(d \in [0, a)\)</span> no tomamos probabilidades de <span class="math inline">\(X\)</span></p>
-<p><img src="Ima%CC%81genes/L2.png" width="100%" />
+<p><img src="Imagenes/L2.png" width="100%" />
 Entonces, a pesar de que <span class="math inline">\(d\)</span> no está en el intervalo <span class="math inline">\([a,b]\)</span>, si le otorga un beneficio a la aseguradora, reduciendo así sus pagos. Aunque no tanto a como cuando <span class="math inline">\(d \in [a,b]\)</span> .</p>
 <p>Quedará ocmo ejercicio para el lector pensar qué sucede cuando <span class="math inline">\(d&gt;b\)</span> tanto de manera teórica como práctica. ¿Creen que el asegurado estaría dispuesto a contratar un contrato así?, ¿Qué pasa con <span class="math inline">\(\mathbb{E}[Y]\)</span>, con sus momentos en general, sus cuantiles, etc ?</p>
 <p>Se invita al lector a desarrollar un poco diferentes variantes de este problema pensando siempre en el punto de vista práctico aplicado a la realidad.</p>
@@ -462,14 +468,14 @@ Entonces, a pesar de que <span class="math inline">\(d\)</span> no está en el i
     {el\hspace{2mm} caso\hspace{2mm} solo\hspace{2mm} con\hspace{2mm} deducibles}
 \end{align*}\]</span></p>
 <p>De igual manera podríamos preguntarnos que sucede moviendo la posición de <span class="math inline">\(&quot;u&quot;\)</span> a lo largo de la recta <span class="math inline">\(\mathbb R^{+}\cup \{0\}\)</span>, esto quedará como ejercicio de razonamiento para el lector.</p>
-<p><img src="Ima%CC%81genes/DiagramaDeVenn.png" width="100%" /></p>
+<p><img src="Imagenes/DiagramaDeVenn.png" width="100%" /></p>
 <p>Finalmente, recordemos gráficamente al deducible y el monto máximo de beneficio:</p>
-<p><img src="Ima%CC%81genes/Simply%20in%208%20minutes.png" width="100%" /></p>
+<p><img src="Imagenes/Simplyin8minutes.png" width="100%" /></p>
 <p><em>Figura:</em> <a href="https://www.youtube.com/watch?v=EfmTWu2yn5Q&amp;feature=youtu.be" class="uri">https://www.youtube.com/watch?v=EfmTWu2yn5Q&amp;feature=youtu.be</a></p>
-<p><img src="Ima%CC%81genes/Cap.6_Pay%20off%20en%20corto%20y%20largo.png" width="100%" /></p>
+<p><img src="Imagenes/Cap_6_Payoffencortoylargo.png" width="100%" /></p>
 <p>Largo <span class="math inline">\(\approx\)</span> comprar (espero que el $ del bien <span class="math inline">\(\uparrow\)</span>). Call = opción de compra.
 Corto <span class="math inline">\(\approx\)</span> vender (espero que el $ del bien <span class="math inline">\(\downarrow\)</span>). Put = opción de venta.</p>
-<p><img src="Ima%CC%81genes/DeducibleYMonto.png" width="100%" /></p>
+<p><img src="Imagenes/DeducibleYMonto.png" width="100%" /></p>
 <p>La gráfica es muy similar a la de ir largo en un contrato Bull Spread.</p>
 <p>La similitud que hay con las estrategias de derivadas puede ayudarnos como guía para saber otras maneras de construyr los mismos contratos, al igual que cuando se <strong>replica</strong> un portafolio en derivadas.
 Por ejemplo, se sabe la estrategia Bull Spread se puede <strong>replicar</strong> a partir de opciones call con diferentes precios Strike, tomando <span class="math inline">\(u&gt;d\)</span>:</p>
@@ -502,7 +508,7 @@ Y una equivalencia también se da ahora con los contratos de monto máximo de be
 <span class="math display">\[max\{min\{X,u\}-d,0\} = max\{X,u\} - max\{X,d\}\]</span>
 La verificación de esto quedará como ejercicio para el lector. Asimismo, estas observaciones se meten con temas fuera del alcance de este curso. Se invita al lector a investigar más y a abrir su mente para hacer analogías con estos temas.</p>
 <p><em>Como un último comentario, me gustaría hacer una pregunta para el lector. Teniendo conocimiento básicos de finanzas, sabemos que <strong>NO</strong> debemos valuar derivados <strong>con probabilidades reales</strong>. en la teoría financiera se sabe que para encontrar el precio de un derivado se hace uso de una medida amortiguada dad por el Lema de Itô. ¿Porqué si los seguros con deducibles y montos máximos de beneficio son similares a algunos productos financieros estos <strong>SÍ</strong> se valúan <strong>con probabilidades reales</strong>?</em></p>
-<p><img src="Ima%CC%81genes/Cap.6_Video%20Derivado%20con%20Prob..png" width="100%" /></p>
+<p><img src="Imagenes/Cap_6_VideoDerivadoconProb.png" width="100%" /></p>
 <p><em>Figura:</em> <a href="https://www.youtube.com/watch?v=qzFAK1jJKIE" class="uri">https://www.youtube.com/watch?v=qzFAK1jJKIE</a></p>
 <p><strong>Combinando todo: pólizas con deducible, monto máximo de beneficio, coaseguro e inflación.</strong></p>
 <p>Cada uno de los contratos son diferentes por sí solos. Sin embargo, así como con el deducible y monto máximo de beneficio, también es posible integrar el coaseguro y la inflación.
@@ -723,7 +729,7 @@ Haciendo esto hemos generalizado en una sola forma todas las coberturas vistas.<
     1&amp;\mbox{si}&amp; t\geq{\alpha}({u}-{d})
     \end{matrix}\right.
 \end{equation*}\]</span></p>
-<p><img src="Ima%CC%81genes/Cap.6_S_Com_grafica.png" width="100%" /></p>
+<p><img src="Imagenes/Cap_6_S_Com_grafica.png" width="100%" /></p>
 
 </div>
 </div>
@@ -734,7 +740,7 @@ Haciendo esto hemos generalizado en una sola forma todas las coberturas vistas.<
         </div>
       </div>
 <a href="severidad-coberturas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="severidad-costo-por-pérdida-y-por-pago.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="severidad-costo-por-perdida-y-por-pago.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

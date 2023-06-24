@@ -23,7 +23,7 @@ Denotaremos por $Y_{ij}$ el monto real reclamado por un asegurado cuya probabili
 \end{eqnarray*}
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla1-P-M_Pril.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla1-P-M_Pril.jpg", error=FALSE)
 ```
 <p style="text-align: center">Cuadro 1. Probabilidad de reclamación - Monto de la reclamación</p>
 
@@ -152,7 +152,7 @@ Con lo que podemos notar que si seguimos hablando del modelo individual, solo qu
 Tomando un portafolio del estilo: 
 
 ```{r echo=FALSE, out.width="40%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla1-SA_QI.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla1-SA_QI.jpg", error=FALSE)
 ```
 
 En el fondo tenemos el riesgo:
@@ -188,13 +188,13 @@ Otra observación importante es que $S$ está acotada. Como $D_{t} \in \{ 0,1\}$
 Que teniendo el cuadro:
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla3-Pril.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla3-Pril.jpg", error=FALSE)
 ```
 
 Se traduce a simplemente tomar:
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla4-Pril.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla4-Pril.jpg", error=FALSE)
 ```
 
 Viendo esto, haremos el cálculo de la esperanza del riesgo $S$.
@@ -324,11 +324,11 @@ Para los datos que se muestran en la tabla de la Figura 1.4 en donde se tienen 4
 
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/Probabilidades de reclamación.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/Probabilidadesdereclamacion.jpg", error=FALSE)
 ```
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/Gráfica 1.5.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/Grafica1_5.jpg", error=FALSE)
 ```
 
 La fórmula que hemos denominado de $De Pril [i]$ y que se encuentra expresada en el contexto de un portafolio de asegurados individuales puede escribirse como un resultado teórico de la teoría de probabilidad. Este es el contenido de la siguiente proposición. La fórmula tiene una expresión más simple y la demostración sigue los mismo lineamientos que la que hemos presentado, sin embargo, escribiremos nuevamente los detalles de la prueba en esta versión simplificada.
@@ -430,11 +430,11 @@ Sean $X_{1}.X_{2},X_{3}$ variables aleatorias independientes con idéntica distr
 Usando la fórmula de De Pril [ii] encontraremos la distribución de $S =X_{1} + X_{2} +X_{3}$.
 
 ```{r echo=FALSE, out.width="40%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla5-Pril.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla5-Pril.jpg", error=FALSE)
 ```
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/Figura 1.6.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/Figura1_6.jpg", error=FALSE)
 ```
 
 Observe que la variable suma puede tomar cualquiera de los valores $0,1,...,6$. Usando la misma notación que en la fórmula de De Pril se muestran a continuación los cálculos para encontrar la función de probabilidad de $S$ y la gráfica correspondiente aparece en la Figura 1.6(b).
@@ -458,7 +458,7 @@ $$S=\displaystyle\sum_{t=1}^{n} C_tD_t=\displaystyle\sum_{i=1}^I\displaystyle\su
 Donde las $C_tD_t$ no tienen la misma distribución $\forall t$ necesariamente. Esto se ve más claro cuando vemos el cuadro que nos muestra el número de individuos por grupo $(i,j)$.\\
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/tabla6-Pril.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla6-Pril.jpg", error=FALSE)
 ```
 
 De aquí podemos observar que, sin pérdida de generalidad, uno de los $n_{11}$ miembros del grupo (1,1), tiene una probabilidad $q_1\neq q_2$ para alguno de los miembros del grupo (1,2) por ejemplo.
@@ -532,19 +532,19 @@ Pueden encontrar los vídeos con parte de la información anterior en los siguie
 
 - De Pril ($i$)
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-        knitr::include_graphics("Imágenes/ModIndFormulas_1.png", error=FALSE)
+        knitr::include_graphics("Imagenes/ModIndFormulas_1.png", error=FALSE)
 ```
 <p style="text-align: center">https://youtu.be/bFPe9cODvD4</p>
         
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-        knitr::include_graphics("Imágenes/ModIndFormulas_2.png", error=FALSE)
+        knitr::include_graphics("Imagenes/ModIndFormulas_2.png", error=FALSE)
 ```
         
 <p style="text-align:center">https://youtu.be/2hX1OB88BlU</p>
 
 - De Pril ($ii$)
         ```{r echo=FALSE, out.width="70%", fig.align='center'}
-        knitr::include_graphics("Imágenes/ModIndFormulas_3.png", error=FALSE)
+        knitr::include_graphics("Imagenes/ModIndFormulas_3.png", error=FALSE)
         ```
         <p style="text-align:center">https://youtu.be/2ZiBGxG_gFg</p>
 

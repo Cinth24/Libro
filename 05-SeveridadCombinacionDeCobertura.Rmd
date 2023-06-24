@@ -10,13 +10,13 @@ Dicho de otra forma, si un siniestro ocurre, la aseguradora pagará los gastos q
 Visto de manera gráfica, si suponemos que el monto del siniestro puede ocurrir dentro del intervalo $[a,b]$ tendremos:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.6_D-mmb I.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_6_D-mmbI.png", error=FALSE)
 ```
 
 Consideremos una v.a $X \in [a,b]$ y tomemos $d, u \in [a,b]$ con $d<u$, el deducible y monto máximo de beneficio respectivamente. Sea $ Y $ la v.a que modela el monto a pagar por parte de la aseguradora en un contrato con estas características para cubrir el siniestro $X$. La gráfica de $Y$ en términos de los posibles valores de $X$ es:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.6_D-mmb 2.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_6_D-mmb2.png", error=FALSE)
 ```
 
 Esto sucede ya que el pago está dado por:
@@ -224,7 +224,7 @@ Pero $Y$ será una variable aleatoria totalmente continua ¿Por qué se quitó e
 Antes, cuando $d\in [a,b]$ llevábamos un intervalo con probabilidad de $X$ a un punto:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/L1.png", error=FALSE)
+knitr::include_graphics("Imagenes/L1.png", error=FALSE)
 ```
 
 Si hacemos una modificación a esto...
@@ -232,7 +232,7 @@ Si hacemos una modificación a esto...
 Cuando $d \in [0, a)$ no tomamos probabilidades de $X$
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/L2.png", error=FALSE)
+knitr::include_graphics("Imagenes/L2.png", error=FALSE)
 ```
 Entonces, a pesar de que $d$ no está en el intervalo $[a,b]$, si le otorga un beneficio a la aseguradora, reduciendo así sus pagos. Aunque no tanto a como cuando $d \in [a,b]$ .
 
@@ -285,26 +285,26 @@ Veamos qué sucede con la regla de Darth Vader para este caso.
 De igual manera podríamos preguntarnos que sucede moviendo la posición de $"u"$ a lo largo de la recta $\mathbb R^{+}\cup \{0\}$, esto quedará como ejercicio de razonamiento para el lector.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/DiagramaDeVenn.png", error=FALSE)
+knitr::include_graphics("Imagenes/DiagramaDeVenn.png", error=FALSE)
 ```
 
 Finalmente, recordemos gráficamente al deducible y el monto máximo de beneficio:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Simply in 8 minutes.png", error=FALSE)
+knitr::include_graphics("Imagenes/Simplyin8minutes.png", error=FALSE)
 ```
 
 _Figura:_ https://www.youtube.com/watch?v=EfmTWu2yn5Q&feature=youtu.be
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.6_Pay off en corto y largo.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_6_Payoffencortoylargo.png", error=FALSE)
 ```
 
 Largo $\approx$ comprar (espero que el \$ del bien $\uparrow$). Call = opción de compra.
 Corto $\approx$ vender (espero que el \$ del bien $\downarrow$). Put = opción de venta.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/DeducibleYMonto.png", error=FALSE)
+knitr::include_graphics("Imagenes/DeducibleYMonto.png", error=FALSE)
 ```
 
 La gráfica es muy similar a la de ir largo en un contrato Bull Spread.
@@ -364,7 +364,7 @@ La verificación de esto quedará como ejercicio para el lector. Asimismo, estas
 _Como un último comentario, me gustaría hacer una pregunta para el lector. Teniendo conocimiento básicos de finanzas, sabemos que **NO** debemos valuar derivados **con probabilidades reales**. en la teoría financiera se sabe que para encontrar el precio de un derivado se hace uso de una medida amortiguada dad por el Lema de Itô. ¿Porqué si los seguros con deducibles y montos máximos de beneficio son similares a algunos productos financieros estos **SÍ** se valúan **con probabilidades reales**?_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.6_Video Derivado con Prob..png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_6_VideoDerivadoconProb.png", error=FALSE)
 ```
 
 _Figura:_ https://www.youtube.com/watch?v=qzFAK1jJKIE
@@ -657,7 +657,7 @@ Por lo tanto:
 \end{equation*}
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.6_S_Com_grafica.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_6_S_Com_grafica.png", error=FALSE)
 ```
 
 

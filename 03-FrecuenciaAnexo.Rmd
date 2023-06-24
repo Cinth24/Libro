@@ -126,7 +126,7 @@ _Demostración._
 $X\in\mbox{ Tipo} (a=0,b>0) \Leftrightarrow X \sim Poi(\lambda=b) \forall b>0$. Entonces tenemos cubierta la región de la derecha.
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Cap.4. Frecuencia Anexo_grafica1.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_4_FrecuenciaAnexo_grafica1.png", error=FALSE)
 ```
 
 - Región Binomial Negativa
@@ -136,7 +136,7 @@ $X\in BinNeg(r,\gamma)$ con $r>0$ y $\gamma\in(0,1)$ sii $X\in \mbox{ Tipo}(a=\g
 
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/BinomNeg.png", error=FALSE)
+knitr::include_graphics("Imagenes/BinomNeg.png", error=FALSE)
 ```
 
 - Región Binomial 
@@ -144,20 +144,20 @@ knitr::include_graphics("Imágenes/BinomNeg.png", error=FALSE)
 $X\in Bin(n,\gamma)$ con $n\in \mathbb N_{1}$ y $ \gamma\in(0,1)$. sii $X\in \mbox{ Tipo}(a=-\frac{\gamma}{1-\gamma},b=(n+1)\left(\frac{\gamma}{1-\gamma}\right)) \therefore a\in(-\infty,0)$ y $b=-a(n+1)$ con $n\in\mathbb{N}_{1}$
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Binom.png", error=FALSE)
+knitr::include_graphics("Imagenes/Binom.png", error=FALSE)
 ```
 
 - Región $X\equiv0 (P_{k}=\delta_{0}^{(k)})$}\\
 $X\equiv0$ sii $X\in\mbox{ Tipo}(a,b=-a)$
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Region.png", error=FALSE)
+knitr::include_graphics("Imagenes/Region.png", error=FALSE)
 ```
 
 De tal manera que las regiones que ya tenemos caracterizadas son descritas en el siguiente gráfico. al conjunto puntos $(a,b)$ en la unión de estas regiones, lo llamaremos $T$. Veamos que si $X\in Tipo(a,b)$ con $(a,b)\notin T$ entonces $P_{k}^{\chi}$ no es función de probabilidad.
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/Cap.4.Frecuencia Anexo_grafica5.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_4_FrecuenciaAnexo_grafica5.png", error=FALSE)
 ```
 
 
@@ -197,7 +197,7 @@ En conclusión: $(a,b)\in$ _I_ $\cup$ _III_ $\longrightarrow \exists k \in\mathb
 _¡La respuesta que has escrito aquí es ejemplar!_
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Cap.4. Frecuencia Anexo_Felicitación.png", error=FALSE)
+knitr::include_graphics("Imagenes/Cap_4_FrecuenciaAnexo_Felicitacion.png", error=FALSE)
 ```
 
 

@@ -171,7 +171,7 @@ $\Rightarrow$ G(x)  = exp \{-exp\{-(\frac{x - \beta }{\alpha}}) \} \} = e^{-e^{-
 \end{eqnarray*}
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Resultado gráfico de valor extremo Gumbel.png", error=FALSE)
+knitr::include_graphics("Imagenes/ResultadograficodevalorextremoGumbel.png", error=FALSE)
 ```
 
 ### Ejemplo 2{-}
@@ -314,7 +314,7 @@ Queda como ejercicio para el lector que:
    $$TVaR_{p}(X) = \frac{\int_{p}^{1} VaR_{u}(X)du}{1-p}$$
     
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Tabla1-MedidasRiesgo.png", error=FALSE)
+knitr::include_graphics("Imagenes/Tabla1-MedidasRiesgo.png", error=FALSE)
 ```
 
 **Aclaración:**

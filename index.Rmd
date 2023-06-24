@@ -125,7 +125,7 @@ $X \ddot{=}$ monto a pagar si el coche sufre un siniestro
 $X \sim Unif(0,595000)$
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/recta.png", error=FALSE)
+knitr::include_graphics("Imagenes/recta.png", error=FALSE)
 ```
 
 ## Familias paramétricas para modelar el monto de riesgo
@@ -147,7 +147,7 @@ Es ideal que exploren las siguientes distribuciones analizando cambios en sus pa
 \end{eqnarray*}
 ```
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Dist_exponencial.png", error=FALSE)
+knitr::include_graphics("Imagenes/Dist_exponencial.png", error=FALSE)
 ```
 
 ### Gamma {.unnumbered}
@@ -164,7 +164,7 @@ knitr::include_graphics("Imágenes/Dist_exponencial.png", error=FALSE)
 \end{eqnarray*}
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Distribución Gama.png", error=TRUE)
+knitr::include_graphics("Imagenes/DistribucionGama.png", error=TRUE)
 ```
 
 ### Log - Normal {.unnumbered}
@@ -181,7 +181,7 @@ knitr::include_graphics("Imágenes/Distribución Gama.png", error=TRUE)
 \end{eqnarray*}
 ```
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Distribución Log-Normal.png", error=TRUE)
+knitr::include_graphics("Imagenes/DistribucionLog-Normal.png", error=TRUE)
 ```
 
 ### Weibull {.unnumbered}
@@ -198,7 +198,7 @@ knitr::include_graphics("Imágenes/Distribución Log-Normal.png", error=TRUE)
 **Nota:** En R está parametrizado con $\frac{1}{\lambda}$.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Distribución Weibull.png", error=TRUE)
+knitr::include_graphics("Imagenes/DistribucionWeibull.png", error=TRUE)
 ```
 
 ### Burr {.unnumbered}
@@ -211,7 +211,7 @@ knitr::include_graphics("Imágenes/Distribución Weibull.png", error=TRUE)
 \end{eqnarray*}
 ```
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Distribución Burr.png", error=TRUE)
+knitr::include_graphics("Imagenes/DistribucionBurr.png", error=TRUE)
 ```
 
 ### Pareto {.unnumbered}
@@ -237,7 +237,7 @@ knitr::include_graphics("Imágenes/Distribución Burr.png", error=TRUE)
     \mathbb E(X) &=& \frac{\alpha \theta}{(\alpha - 1)}; \ \mathbb V(X) = \frac{\alpha \theta^{2}}{(\alpha-2)(\alpha - 1)^{2}};\ \mathbb E (X^{r})= \frac{\alpha \theta^{r}}{(\alpha-r)},\ \alpha>r,\ r=1,2,...
 \end{eqnarray*}
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Distribución Pareto.png", error=TRUE)
+knitr::include_graphics("Imagenes/DistribucionPareto.png", error=TRUE)
 ```
 
 El paquete **actuar** de R llama como pareto2 o bien pareto a la distribución aquí marcada como "Pareto".
@@ -246,7 +246,7 @@ El paquete **actuar** de R llama como pareto2 o bien pareto a la distribución a
 
 ## Modelación del riesgo
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Actuario f.png", error=TRUE)
+knitr::include_graphics("Imagenes/Actuariof.png", error=TRUE)
 ```
 
 ## Ajuste de funciones de probabilidad
@@ -332,7 +332,7 @@ x_{0}&=& \frac{n-1}{\lambda}
 Entonces si se tiene un conjunto de datos $\{d_{i}\}_{i=1}^{n}$ y pudiera trazar su función de densidad empírica; si yo sospecho que esos datos tienen una distribución asociada $Gamma(n, \lambda)$ entonces su moda debería verse algo así:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Dist_Gamma.png", error=TRUE)
+knitr::include_graphics("Imagenes/Dist_Gamma.png", error=TRUE)
 ```
 
 De tal manera que al ver esto, podamos sospechar que la información que tenemos, realmente proviene de la distribución que nosotros propusimos.
@@ -351,7 +351,7 @@ f_{Z}(t)&=& af_{X}(t)+bf_{Y}(t)
 Dando como resultado que la función de densidad $Z$ tenga un comportamiento similar al siguiente:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Mezclas.png", error=TRUE)
+knitr::include_graphics("Imagenes/Mezclas.png", error=TRUE)
 ```
 
 **Script: "Mezclas"**
@@ -402,19 +402,19 @@ Dado un valor de $\alpha$ entonces:
 Si $\alpha>$ 0, entonces la distribución es "asimétrica positiva" (o "asimétrica a la derecha").
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("Imágenes/asipos.png", error=TRUE)
+knitr::include_graphics("Imagenes/asipos.png", error=TRUE)
 ```
 
 Si $\alpha$=0, entonces la distribución es "simétrica".
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("Imágenes/simetria.png", error=TRUE)
+knitr::include_graphics("Imagenes/simetria.png", error=TRUE)
 ```
 
 Si $\alpha<$ 0, entonces la distribución es "asimétrica negativa (o"asimétrica a la izquierda).
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("Imágenes/Asineg.png", error=TRUE)
+knitr::include_graphics("Imagenes/Asineg.png", error=TRUE)
 ```
 
 ### Coeficiente de Kurtosis
@@ -456,19 +456,19 @@ Donde $K$ también tiene una interpretación gráfica como veremos a continuaci�
 Si $K>$ 3, entonces la distribución es **más apuntada** y con **colas menos gruesas** que la normal estándar.
 
 ```{r echo=FALSE, out.width="30%", fig.align='center'}
-knitr::include_graphics("Imágenes/lepto.png", error=TRUE)
+knitr::include_graphics("Imagenes/lepto.png", error=TRUE)
 ```
 
 Si $K$=3, entonces la distribución tiene una forma apuntada y con **colas similares la normal estándar**.
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("Imágenes/meso.png", error=TRUE)
+knitr::include_graphics("Imagenes/meso.png", error=TRUE)
 ```
 
 Si $K<$ 3, entonces la distribución es **menos apuntada** y con **colas más gruesas** que la normal estándar.
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("Imágenes/plati.png", error=TRUE)
+knitr::include_graphics("Imagenes/plati.png", error=TRUE)
 ```
 
 ### Función de distribución empírica
@@ -484,14 +484,14 @@ F_n(t) \ddot{=} \frac{\sum_{i=1}^{n} \mathbb{I}(x_{i} \leq t)}{n}
 Véase:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Func_dist_empirica.png", error=TRUE)
+knitr::include_graphics("Imagenes/Func_dist_empirica.png", error=TRUE)
 ```
 <p style="text-align: center">Figura 1. https://www.youtube.com/watch?v=iN3BDlmfdT0 </p>
 
 Teniendo nuestros datos, la distribución empírica se ve de la siguiente manera:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes//Distribucion empirica.png", error=TRUE)
+knitr::include_graphics("Imagenes/Distribucionempirica.png", error=TRUE)
 ```
 
 ### Cuantiles
@@ -676,7 +676,7 @@ De nuestro ejemplo anterior, el EMV para $\tau (\lambda)$ es $\tau\left(\frac{n}
 **Un vídeo donde se explica a grandes rasgos lo anterior lo podrán ver en el siguiente enlace:**
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Video_FV.png", error=TRUE)
+knitr::include_graphics("Imagenes/Video_FV.png", error=TRUE)
 ```
 <p style="text-align: center">https://www.youtube.com/watch?v=zPSj0ltrBoc</p>
 
@@ -717,7 +717,7 @@ D&=& máx\{D^+,D^-\}
 Esta prueba se usa para datos desagregados y para variables aleatorias continuas, i.e.,$F_0$ es una función de distribución continua $F_n$ es la función de distribución empírica, y se calcula con los datos reales.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Detalle de las diferencias.png", error=TRUE)
+knitr::include_graphics("Imagenes/Detalledelasdiferencias.png", error=TRUE)
 ```
 
 #### Prueba Anderson-Darling (A-D)
@@ -778,13 +778,13 @@ Recordemos un gráfico muy socorrido en estadística:
 En general, podríamos ver gráficamente una prueba de hipótesis asi:
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/p-value1.png", error=TRUE)
+knitr::include_graphics("Imagenes/p-value1.png", error=TRUE)
 ```
 
 Dado un estadístico de prueba, este podría caer en la **región de "aceptación" (no-rechazo)** o en la **región de rechazo**.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/p-value2.png", error=TRUE)
+knitr::include_graphics("Imagenes/p-value2.png", error=TRUE)
 ```
 
 Eso pues precisamente si el estadístico de prueba (Z) es muy grande, es porque lo que supongo $(H_0)$ comente muchos errores.
@@ -792,7 +792,7 @@ Eso pues precisamente si el estadístico de prueba (Z) es muy grande, es porque 
 Bueno, pues si fijamos que la región de rechazo tenga un área del $\alpha=5\%$ (como usualmente se toma) entonces tendremos algo así:
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/p-value3.png", error=TRUE)
+knitr::include_graphics("Imagenes/p-value3.png", error=TRUE)
 ```
 
 Si el p-value es la probabilidad de ver un valor más extremo que el estadístico de prueba (estadística observada) entonces existen básicamente dos casos:
@@ -800,7 +800,7 @@ Si el p-value es la probabilidad de ver un valor más extremo que el estadístic
 -   p-value $> \alpha$
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/p-value4.png", error=TRUE)
+knitr::include_graphics("Imagenes/p-value4.png", error=TRUE)
 ```
 
 Como p-value $> \alpha$ en el fondo estamos diciendo que el estadístico de prueba no fue tan grande y por tanto la hipótesis nula es estadísticamente correcta al coincidir lo suficiente con lo observado.
@@ -813,7 +813,7 @@ Como p-value $> \alpha$ en el fondo estamos diciendo que el estadístico de prue
 -   p-value $< \alpha$
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/p-value5.png", error=TRUE)
+knitr::include_graphics("Imagenes/p-value5.png", error=TRUE)
 ```
 
 Este es el caso contrario, por tanto, lo que estamos asumiendo como $H_0$ no está viéndose reflejado en los datos observados.

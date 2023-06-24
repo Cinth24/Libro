@@ -49,7 +49,7 @@ monto-máximo-de-beneficio
 severidad-combinacion-de-coberturas
 contratos-con-deducible-y-monto-máximo-de-beneficio
 generalización-de-beneficio-y-monto-máximo
-severidad-costo-por-pérdida-y-por-pago
+severidad-costo-por-perdida-y-por-pago
 costo-por-pago
 cuantiles-para-las-coberturas
 severidad-anexo
@@ -75,3 +75,7 @@ credibilidad-completa-bajo-hipótesis-de-normalidad
 credibilidad-parcial
 credibilidad-parcial-bajo-hipótesis-de-normalidad
 ajuste-de-primas-con-credibilidad-clásica
+enfoque-bayesiano
+teorema-de-bayes
+familias-conjugadas
+cálculo-bayesiano-de-primas-de-seguros

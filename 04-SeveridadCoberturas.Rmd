@@ -23,7 +23,7 @@ _Nota: Entonces, cuando queramos medir, de forma probabilística, fenómenos que
 Cuando una v.a. es **discreta**, su función de distribución puede verse como algo de este estilo:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica1.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica1.png", error=FALSE)
 ```
 
 Del gráfico se puede deducir que:
@@ -65,7 +65,7 @@ Calculando las diferencias entre los saltos:
 De tal manera que cuando vemos la función de densidad de una v.a. discreta, se verá como:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica2.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica2.png", error=FALSE)
 ```
 
 Notemos que la función solamente toma valores positivos en puntos específicos. En el resto es continua casi-seguramente como constante igual a cero.
@@ -73,7 +73,7 @@ Notemos que la función solamente toma valores positivos en puntos específicos.
 En cuanto a las v.a \textcolor{blue}{continuas} los gráficos de las funciones de distribución son algo de este estilo:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica3.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica3.png", error=FALSE)
 ```
 
 Observemos que esta gráfica **no tiene saltos**, de hecho, $\forall\hspace{0.3em}p\in [0,1]\quad \exists x \in \mathbb{R}$ tal que $F_X(x)=p$ (considerando aquellos casos donde $x\rightarrow\infty\hspace{0.4em} ó\hspace{0.4em}-\infty$). 
@@ -85,7 +85,7 @@ Si nosotros quisiéramos obtener la función de densidad de la v.a. anterior, ba
 Haciendo esto y tomando como referencia simplemente el gráfico anterior, su función de densidad podría verse como algo del estilo:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica4.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica4.png", error=FALSE)
 ```
 
 Notemos que **esta función es continua, al menos en $(0,x_0)$ ** que tiene que ser el $sop\{X\}$ pues vemos que la distribución acumula nada (cero) antes del 0 y todo (uno) después de $x_0$.
@@ -97,7 +97,7 @@ Cuando hablamos de una v.a **mixta** vamos a tener una **función de distribuci�
 Gráficamente puede verse como:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica5.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica5.png", error=FALSE)
 ```
 
 Recordemos que **una función de distribución acumulada siempre hace referencia a una probabilidad**. Entonces los saltos que tiene esta función no pueden pasar desapercibidos. De hecho, lo que sucede es que la variable aleatoria subyacente a $F_X$ del último gráfico, debe ser **mixta**.
@@ -109,7 +109,7 @@ De observar el gráfico anterior vemos que hay saltos  en los puntos 0  y $x_0$,
 La función de densidad debería verse como:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica6.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica6.png", error=FALSE)
 ```
 
 ## Coberturas en Seguros / Reaseguros
@@ -121,7 +121,7 @@ Comúnmente este tema está muy relacionado con los tipos de **reaseguro**, sin 
 Para introducir este tema se recomienda ver:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/5. SC_grafica7.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_SC_grafica7.png", error=FALSE)
 ```
 
 Sea $X$ una v.a. que modela la **severidad** de un riesgo. Cuando ocurre un siniestro, $X$ toma un valor fijo y según lo que se establezca en una póliza podemos ''dividir'' este monto en dos partes:
@@ -308,7 +308,7 @@ Debemos tener en mente que este factor inflacionario aumentó el valor esperado 
 Ahora, vamos a observar el siguiente diagrama
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Teoría del riesgo_Inflación y Coaseguro.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Teoriadelriesgo_InflacionyCoaseguro.png", error=FALSE)
 ```
 
 ### Deducibles
@@ -316,7 +316,7 @@ knitr::include_graphics("Imágenes/5. Teoría del riesgo_Inflación y Coaseguro.
 ¿Cómo funciona un deducible? ¿Por qué funciona?
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Deducible.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Deducible.png", error=FALSE)
 ```
 
 _Figura 1._ https://www.youtube.com/watch?v=sV0mQB42Rf4&feature=youtu.be
@@ -326,13 +326,13 @@ Cuando ocurre un siniestro, el asegurado llama al seguro. En la póliza (de hech
 Visto de manera gráfica, si suponemos que el monto del siniestro puede ocurrir dentro del intervalo $[a,b]$.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Linea del tiempo.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Lineadeltiempo.png", error=FALSE)
 ```
 
 Sea $X$ el monto de pérdida asociado a un siniestro definido en el intervalo $[a,b]$ con $a \geq 0$. Sea $d \in [a,b]$ el deducible establecido en la póliza. El pago de la aseguradora tendrá un comportamiento:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Deducible y Coaseguro.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_DeducibleyCoaseguro.png", error=FALSE)
 ```
 
 Esto es debido a que podemos calcular a Y en términos de $X$ como:
@@ -370,7 +370,7 @@ Por lo tanto
 \end{eqnarray*}
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. DC II.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_DCII.png", error=FALSE)
 ```
 
 Por lo tanto , vemos que $Y$ acumula probabilidad positiva en un punto. ¿Será entonces que Y es una v.a **discreta**?
@@ -404,7 +404,7 @@ Si \quad  X \in (d,b]  \Leftrightarrow 0< \gamma \leq b-d
  $\Omega =Y \geq 0 \quad \Leftrightarrow \quad (Y=0 \vee  Y>0)=\Omega$
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Grafica.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Grafica.png", error=FALSE)
 ```
 
 Tomemos $t \in (0,b-d]$, ahora midamos probabilidad de $\gamma$.
@@ -461,7 +461,7 @@ F_{Y}(t)&=& { \mathbb{P}[Y \equiv 0]}+{\mathbb{P}[0 < Y \leq t]}\\
 Esto pues, como tenemos $t \in (0, b-d]$ entonces:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Linea.png", error=FALSE)
+knitr::include_graphics("Imagenes/Linea.png", error=FALSE)
 ```
 
 \begin{eqnarray*}
@@ -515,7 +515,7 @@ Así podríamos calcular la esperanza "Por definición" de una variable aleatori
 ## La regla de Darth Vader
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. DV.jpeg", error=FALSE)
+knitr::include_graphics("Imagenes/5_DV.jpeg", error=FALSE)
 ```
 
 El nombre del siguiente teorema no tiene un origen del todo oficial.
@@ -529,7 +529,7 @@ Considerando una v.a $X$ que es no-negativa casi-seguramente y cuya esperanza ex
 \end{eqnarray*}
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. DV 2.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_DV2.png", error=FALSE)
 ```
 
 _Figura 2:_ https://www.youtube.com/watch?v=wWC7KFpuPmI&feature=youtu.be
@@ -537,7 +537,7 @@ _Figura 2:_ https://www.youtube.com/watch?v=wWC7KFpuPmI&feature=youtu.be
 Podemos ver un ejemplo de esto, en el vídeo que se muestra a continuación
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Regla-DV.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Regla-DV.png", error=FALSE)
 ```
 
 _Figura 3:_ https://www.youtube.com/watch?v=wWC7KFpuPmI
@@ -549,7 +549,7 @@ Nosotros vamos a decir que la esperanza está calculada **a la Darth Vader** cua
 Otro vídeo que puede ayudar a comprender esta idea lo encontrarán a continuación:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Esperanza.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Esperanza.png", error=FALSE)
 ```
 
 _Figura 4:_ https://www.youtube.com/watch?v=ZX2W59Mdaag
@@ -586,13 +586,13 @@ Cuando ocurre un siniestro en un contrato de este estilo, el asegurado llama a l
 Visto de manera gráfica, si suponemos que el monto del siniestro puede ocurrion dentro del intervalo $[a,b]$ tendremos:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Linea del tiempo.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_Lineadeltiempo.png", error=FALSE)
 ```
 
 Sea $X$ el monto de pérdida asociado a un siniestro definido en el intervalo $[a,b]$, $(a\geq0)$. Sea **u** el monto máximo de beneficio definido en la póliza con $u\in[a,b]$. La v.a. $Y$ tendrá un comportamiento del estilo:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/5. Deducible y Coaseguro.png", error=FALSE)
+knitr::include_graphics("Imagenes/5_DeducibleyCoaseguro.png", error=FALSE)
 ```
 
 Esto es similar al pay off de ir corto en una opción put. "vender una opción de venta."

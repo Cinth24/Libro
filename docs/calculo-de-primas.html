@@ -23,7 +23,7 @@
 <meta name="author" content="Cinthya Denisse González Mendoza" />
 
 
-<meta name="date" content="2023-06-19" />
+<meta name="date" content="2023-06-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -166,10 +166,10 @@
 <li class="chapter" data-level="" data-path="severidad-combinacion-de-coberturas.html"><a href="severidad-combinacion-de-coberturas.html#quitando-monto-máximo-de-beneficio-uinfty"><i class="fa fa-check"></i>Quitando Monto máximo de beneficio: <span class="math inline">\(u=\infty\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por pérdida y por pago)</a><ul>
-<li class="chapter" data-level="7.1" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
-<li class="chapter" data-level="7.2" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
-<li class="chapter" data-level="" data-path="severidad-costo-por-pérdida-y-por-pago.html"><a href="severidad-costo-por-pérdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html"><i class="fa fa-check"></i><b>7</b> Severidad (Costo por perdida y por pago)</a><ul>
+<li class="chapter" data-level="7.1" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#costo-por-pago"><i class="fa fa-check"></i><b>7.1</b> Costo por pago</a></li>
+<li class="chapter" data-level="7.2" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#cuantiles-para-las-coberturas"><i class="fa fa-check"></i><b>7.2</b> Cuantiles para las coberturas</a><ul>
+<li class="chapter" data-level="" data-path="severidad-costo-por-perdida-y-por-pago.html"><a href="severidad-costo-por-perdida-y-por-pago.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="severidad-anexo.html"><a href="severidad-anexo.html"><i class="fa fa-check"></i><b>8</b> Severidad Anexo</a><ul>
@@ -231,6 +231,12 @@
 <li class="chapter" data-level="15.1.5" data-path="credibilidad.html"><a href="credibilidad.html#credibilidad-parcial-bajo-hipótesis-de-normalidad"><i class="fa fa-check"></i><b>15.1.5</b> Credibilidad Parcial bajo Hipótesis de Normalidad</a></li>
 <li class="chapter" data-level="15.1.6" data-path="credibilidad.html"><a href="credibilidad.html#ajuste-de-primas-con-credibilidad-clásica"><i class="fa fa-check"></i><b>15.1.6</b> Ajuste de primas con credibilidad clásica</a></li>
 </ul></li>
+<li class="chapter" data-level="15.2" data-path="credibilidad.html"><a href="credibilidad.html#enfoque-bayesiano"><i class="fa fa-check"></i><b>15.2</b> Enfoque bayesiano</a></li>
+<li class="chapter" data-level="15.3" data-path="credibilidad.html"><a href="credibilidad.html#teorema-de-bayes"><i class="fa fa-check"></i><b>15.3</b> Teorema de Bayes</a></li>
+<li class="chapter" data-level="15.4" data-path="credibilidad.html"><a href="credibilidad.html#familias-conjugadas"><i class="fa fa-check"></i><b>15.4</b> Familias conjugadas</a></li>
+<li class="chapter" data-level="15.5" data-path="credibilidad.html"><a href="credibilidad.html#cálculo-bayesiano-de-primas-de-seguros"><i class="fa fa-check"></i><b>15.5</b> Cálculo Bayesiano de primas de seguros</a><ul>
+<li class="chapter" data-level="" data-path="credibilidad.html"><a href="credibilidad.html#cómo-modelar-un-riesgo-para-obtener-una-prima-de-credibilidad-bayesiana"><i class="fa fa-check"></i>¿Cómo modelar un riesgo para obtener una prima de credibilidad Bayesiana?</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -253,7 +259,7 @@
 <h1><span class="header-section-number">Capítulo 14</span> Calculo de primas<a href="calculo-de-primas.html#calculo-de-primas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>A lo largo de la carrera hemos estudiado diversas formas de calcular una prima de seguros. Por ejemplo, en MASP nosotros definíamos <span class="math inline">\({T_x}\)</span> como la variable aleatoria del tiempo futuro de vida para una persona de edad <span class="math inline">\((x)\)</span>. A partir de esta, lo que hacíamos era pensar en un flujo de efectivo “$”, el cual movíamos a lo largo del tiempo <span class="math inline">\(T_x\)</span>. De esta manera, los flujos de efectivo pasaban de ser “ciertos” como en las matemáticas financieras, a ser <span class="math inline">\({Contingentes}\)</span> por el efecto de la <span class="math inline">\(v.a.\)</span>.</p>
 <p><span class="math display">\[ (\$)(1+i)^{-{T_x}}=(\$)(V^{{T_x}})= (\$){\cdot e^{-\delta {T_x}}} \]</span></p>
-<p><img src="Ima%CC%81genes/flujo.PNG" width="100%" /></p>
+<p><img src="Imagenes/flujo.PNG" width="100%" /></p>
 <p><span class="math inline">\(V^{T_x}\)</span> es v.a.</p>
 <p>Recordemos que como <span class="math inline">\(T_x\)</span> era una <span class="math inline">\(v.a.\)</span> entonces tenía asociada una función de densidad <strong>en el caso continuo</strong>:
 <span class="math display">\[f_{T_x}(t)=~_tP_x \mu_{x+t}; \text{para} ~t\in (0,w-x)~//~ w-x=\text{límite de vida}\]</span>
@@ -262,7 +268,7 @@ ajo un contexto de seguro de personas, una suma asegurada <strong>fija</strong> 
 <p><span class="math display">\[{SA}\underbrace{{{A_x}}}_{notación~actuarial}= {SA} \mathbb{E}[V^{{T_x}}]= {SA} \displaystyle \int_0^{w-x}V^t f_{{T_x}}(t)dt \]</span></p>
 <p>Por otro lado el asegurado se comprometía a pagar una <strong>Prima</strong> pago que se haría hasta el momento en que la persona falleciera. En el <strong>caso discreto</strong> los pagos se ven como una anualidad vencida cuyo valor presente era modelado con la <span class="math inline">\(v.a.\)</span>:</p>
 <p><span class="math display">\[{P}\bar{a}_{{T_x}} ={P} \left(\frac{1-V^{{T_x}}}{i}\right) \]</span>
-<img src="Ima%CC%81genes/TimeLine.png" width="100%" /></p>
+<img src="Imagenes/TimeLine.png" width="100%" /></p>
 <p>y generalizando esto al <strong>caso continuo</strong>, la <span class="math inline">\(v.a.\)</span> está dada por:</p>
 <p><span class="math inline">\({P}{a}_{{{T_x}}|\delta}= {P}\left( \frac{1-V^{{T_x}}}{\delta}\right)\)</span> y su valor esperado se calculaba:</p>
 <p><span class="math display">\[{P}{\bar{a_x}} = {P}\mathbb{E}
@@ -355,7 +361,7 @@ En donde <span class="math inline">\(\theta&gt;0\)</span> es una constante llama
 <p><span class="math inline">\(b)\)</span> Es cóncava.</p>
 <p><strong>Suponiendo diferenciabilidad, la primera condición se escribe <span class="math inline">\(v&#39;(x)&gt;0\)</span>, y la segunda condición significa que <span class="math inline">\(v&#39;&#39;(x)\leq 0\)</span>.</strong> A veces se añade la condición <span class="math inline">\(v(0)=0\)</span> pues toda función de utilidad (definida en <span class="math inline">\(x=0\)</span>) puede modificarse de tal forma que cumpla esa condición sin afectar el resultado en los procesos de decisión que llevaremos a cabo usando estas funciones. La nueva función de utilidad sería <span class="math inline">\(v(x)-v(0)\)</span>.</p>
 <p>Lo que hace una función de utilidad es brindar una manera en que la entidad/individuo que está expuesto a un evento fortuito observa las cosas. Dicho de alguna forma, es la herramienta que nos permite darle peso a algo desde nuestra perspectiva, nos permite indicar preferencias, en este caso, al riesgo.</p>
-<p><img src="Ima%CC%81genes/calculo_primas1.png" width="100%" /></p>
+<p><img src="Imagenes/calculo_primas1.png" width="100%" /></p>
 <p>De acuerdo al principio de utilidad cero, la prima que debemos cobrar es el número real <span class="math inline">\(P\)</span>=<span class="math inline">\(P^{(vc)}(S)\)</span> tal que:</p>
 <p><span class="math display">\[\begin{eqnarray*}
 v({u})&amp;=&amp;\mathbb{E}[v({u}+{P}-{S})]
@@ -421,38 +427,38 @@ v({u})&amp;=&amp;\mathbb{E}[v({u}+{P}-{S})]
      \end{eqnarray*}\]</span></p>
 <p>Existen más y diversas formas de calcular la prima correspondiente a un riesgo que buscamos asumir. A continuación mostramos una serie de vídeos que explican lo anterior y más principios (metodologías). Al final, en la práctica cada aseguradora tiene su metodología técnica (a veces “ultra-secreta”) de hacer esta clase de cálculos.</p>
 <p><em>Propiedades generales</em></p>
-<p><img src="Ima%CC%81genes/14.%20a.png" width="100%" /></p>
+<p><img src="Imagenes/14_a.png" width="100%" /></p>
 <p><em>Figura 1:</em> <a href="https://www.youtube.com/watch?v=QSqioUk8di8" class="uri">https://www.youtube.com/watch?v=QSqioUk8di8</a></p>
 <p><em>¿Por qué: <span class="math inline">\(P \geq \mathbb{E}[S]\)</span> ?</em></p>
-<p><img src="Ima%CC%81genes/14.%20b.png" width="100%" /></p>
+<p><img src="Imagenes/14_b.png" width="100%" /></p>
 <p><em>Figura 2:</em> <a href="https://www.youtube.com/watch?v=Wk4rj2X5QKU" class="uri">https://www.youtube.com/watch?v=Wk4rj2X5QKU</a></p>
 <p><em>Principio de valor esperado</em></p>
-<p><img src="Ima%CC%81genes/14.%20c.png" width="100%" /></p>
+<p><img src="Imagenes/14_c.png" width="100%" /></p>
 <p><em>Figura 3:</em> <a href="https://www.youtube.com/watch?v=4rgG755GrzI" class="uri">https://www.youtube.com/watch?v=4rgG755GrzI</a></p>
 <p><em>Principio de la Varianza</em></p>
-<p><img src="Ima%CC%81genes/14.%20d.png" width="100%" /></p>
+<p><img src="Imagenes/14_d.png" width="100%" /></p>
 <p><em>Figura 4:</em> <a href="https://www.youtube.com/watch?v=8Gueak3JbmQ" class="uri">https://www.youtube.com/watch?v=8Gueak3JbmQ</a></p>
 <p><em>Principio de la desviación estándar</em></p>
-<p><img src="Ima%CC%81genes/14.%20e.png" width="100%" /></p>
+<p><img src="Imagenes/14_e.png" width="100%" /></p>
 <p><em>Figura 5:</em> <a href="https://www.youtube.com/watch?v=0PO_1paX6q0" class="uri">https://www.youtube.com/watch?v=0PO_1paX6q0</a></p>
 <p><em>Principio de utilidad cero</em></p>
-<p><img src="Ima%CC%81genes/14.%20f.png" width="100%" /></p>
+<p><img src="Imagenes/14_f.png" width="100%" /></p>
 <p><em>Figura 6:</em> <a href="https://www.youtube.com/watch?v=FTjJNnmtXEQ" class="uri">https://www.youtube.com/watch?v=FTjJNnmtXEQ</a></p>
 <p><em>Un caso particular: Principio exponencial</em></p>
-<p><img src="Ima%CC%81genes/14.%20g.png" width="100%" /></p>
+<p><img src="Imagenes/14_g.png" width="100%" /></p>
 <p><em>Figura 7:</em> <a href="https://www.youtube.com/watch?v=G-kdmOvGQaM" class="uri">https://www.youtube.com/watch?v=G-kdmOvGQaM</a></p>
 <p><em>Similar al de utilidad cero, tenemos: Principio de valor medio</em></p>
-<p><img src="Ima%CC%81genes/14.%20h.png" width="100%" /></p>
+<p><img src="Imagenes/14_h.png" width="100%" /></p>
 <p><em>Figura 8:</em> <a href="https://www.youtube.com/watch?v=zZBLfA0smzM" class="uri">https://www.youtube.com/watch?v=zZBLfA0smzM</a></p>
 <p><em>Usando una idea similar al VaR para la prima: Principio del porcentaje</em></p>
-<p><img src="Ima%CC%81genes/14.%20i.png" width="100%" /></p>
+<p><img src="Imagenes/14_i.png" width="100%" /></p>
 <p><em>Figura 9:</em> <a href="https://www.youtube.com/watch?v=fB9YgXOfWJI" class="uri">https://www.youtube.com/watch?v=fB9YgXOfWJI</a></p>
 <p>Algunas metodologías más elegantes:</p>
 <p><em>Principio Esscher</em>
-<img src="Ima%CC%81genes/14.%20j.png" width="100%" /></p>
+<img src="Imagenes/14_j.png" width="100%" /></p>
 <p><em>Figura 10:</em> <a href="https://www.youtube.com/watch?v=GrLNmeDKbec" class="uri">https://www.youtube.com/watch?v=GrLNmeDKbec</a></p>
 <p><em>Principio de riesgo ajustado</em></p>
-<p><img src="Ima%CC%81genes/14.%20k.png" width="100%" /></p>
+<p><img src="Imagenes/14_k.png" width="100%" /></p>
 <p><em>Figura 11:</em> <a href="https://www.youtube.com/watch?v=qUnqBKJBXPI" class="uri">https://www.youtube.com/watch?v=qUnqBKJBXPI</a></p>
 
 </div>

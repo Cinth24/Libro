@@ -1,4 +1,4 @@
-# Severidad (Costo por pérdida y por pago)
+# Severidad (Costo por perdida y por pago)
 
 ## Costo por pago
 
@@ -25,7 +25,7 @@ Que querría decir, condicionado a que el siniestro superó el deducible. Pues $
 Teniendo definida la variable aleatoria $Y_p$, vamos a obtener su función de densidad. Haremos esto para la versión generalizada de $Y_L$, la cuál es teniendo todas las coberturas. Esto hará que $Y_p$ sea una v.a. mixta ya que, por definición,$Y_P\ \ddot{=}\ Y_L|Y_L>0$ son valores que toma $Y_L$ solo que "asumiendo" que $Y_L$ es ya positiva y recordemos que esta versión generalizada es continua en ($0,\alpha(u-d)$) y discreta en $\alpha(u-d)$.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Severidad_CP.png", error=FALSE)
+knitr::include_graphics("Imagenes/Severidad_CP.png", error=FALSE)
 ```
 
 Procedemos aplicando el teorema de probabilidad total y tomando $t \in (0,\alpha(u-d))$:
@@ -261,7 +261,7 @@ De donde se deduce que los cuantiles de $Y_{p}$ vienen dados por los de $Y_{L}$ 
 Esto significa que, mientras  $Y_{L}$ tiene un rango de probabilidades $[0,1]$ de manera "libre" . $Y_{p}$ se encuentra atrapada en un universo ``más pequeño"  que $Y_{L}$ sin siquiera notarlo.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Yp.png", error=FALSE)
+knitr::include_graphics("Imagenes/Yp.png", error=FALSE)
 ```
 
 De hecho:

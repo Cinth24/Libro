@@ -72,25 +72,25 @@ Se invita a platicar un poco sobre esto.
 A continuación mostramos algunos vídeos con los temas que se acaban de mencionar.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/13. QR.png", error=FALSE)
+knitr::include_graphics("Imagenes/13_QR.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=LbDaSLqyfYE
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/13. RP.png", error=FALSE)
+knitr::include_graphics("Imagenes/13_RP.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=xUroi0VZll4
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/13. RNP-EL.png", error=FALSE)
+knitr::include_graphics("Imagenes/13_RNP-EL.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=pGP_bK8x2-U
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/13. RNP- StopLoss.png", error=FALSE)
+knitr::include_graphics("Imagenes/13_RNP-StopLoss.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=TAjhROWBkiE

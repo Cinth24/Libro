@@ -24,7 +24,7 @@ Sea $p_k:=\mathbb{P}[X=k]$. Resulta ser que las distribuciones anteriores se pue
 Con base en la regla anterior, conociendo inicialmente nuestra distribución, y resolviendo por un sistema de ecuaciones, podríamos determinar los valores de a y b para las distribuciones anteriores. Lo cuál nos lleva al siguiente cuadro:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/tabla1-Frecuencia.jpg", error=FALSE)
+knitr::include_graphics("Imagenes/tabla1-Frecuencia.jpg", error=FALSE)
 ```
 
 Notemos que si conocemos información mínima de este cuadro para alguna variable aleatoria, podemos determinar por completo de qué distribución se está hablando.
@@ -62,7 +62,7 @@ La suma de dos variables independientes con distribución Poisson($\lambda_1$) y
 
 Nota: $Var(X)=\mathbb{E}[X]$.
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 video1.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3video1.png", error=FALSE)
 ```
 <p style="text-align: center">https://youtu.be/y_dOx8FhHpQ</p>
 
@@ -84,7 +84,7 @@ Una variable aleatoria binomial registra el número de éxitos en $n$ ensayos in
 
 Nota: $\mathbb{E}[X]>Var(X)$.
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 video2.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3video2.png", error=FALSE)
 ```
 <p style="text-align: center">https://youtu.be/Tf08fZWbyV8</p>
 
@@ -106,7 +106,7 @@ Este es el modelo que se usa para contar el número de fracasos antes de obtener
 
 Nota: $\mathbb{E}[X]<Var(X)$.
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 video3.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3video3.png", error=FALSE)
 ```
 <p style="text-align: center">https://youtu.be/l5uUzzUuZH4</p>
 
@@ -136,15 +136,15 @@ Por su naturaleza, podemos ver que tomando la recursión de clase (a,b,i) y haci
 
 Obtenemos una ecuación de una línea recta $(ak+b)$, esto gráficamente muestra lo siguiente:
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 distribución1.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3distribucion1.png", error=FALSE)
 ```
 <p style="text-align: center">$f(k)=b\quad\text{(constante)}\quad\text{donde}\quad a=0\quad ; \quad b>0$</p>
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 distribución2.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3distribucion2.png", error=FALSE)
 ```
 <p style="text-align: center">$f(k)=ak+b\quad \text{donde}\quad a<0\quad ; \quad b>0$</p>
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4.3 distribución3.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3distribucion3.png", error=FALSE)
 ```
 <p style="text-align: center">$f(k)=ak+b\quad \text{donde}\quad a\in(0,1)\quad ; \quad b\leq0$</p>
 
@@ -426,6 +426,6 @@ Script:"Familia (a,b,i)"
 Un vídeo donde se explica a grandes rasgos lo anterior lo podrán ver en el siguiente enlace:
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("Imágenes/4. 3 Video Modelos Actuariales.png", error=FALSE)
+knitr::include_graphics("Imagenes/4_3VideoModelosActuariales.png", error=FALSE)
 ```
 <p style="text-align: center">https://www.youtube.com/watch?v=ZX2W59Mdaag</p>

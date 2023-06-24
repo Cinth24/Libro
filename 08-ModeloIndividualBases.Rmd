@@ -7,7 +7,7 @@ Comencemos con un caso particular.
 Suponga que tiene un portafolio de $n$ pólizas individuales de seguros válidas por un año como se muestra en la _Figura 1.1_.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/ModeloInd_1.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloInd_1.png", error=FALSE)
 ```
 
 _Figura 1.1_
@@ -32,11 +32,11 @@ Claramente **$D_j$ tiene una distribución Bernoulli con parámetro $q_j$**. El 
 **Observe que esta variable aleatoria puede ser mixta**, es decir, no ser continua ni discreta. véase la Figura 1.2 en donde se muestran posibles gráficas de la función de distribución de esta variable aleatoria. De esta forma **se considera como datos en este modelo la colección de vectores aleatorios $(D_1,C_1),...,(D_n,C_n),$** que supondremos **independientes**. Consideraremos **además que las variables $D_j$ y $C_j$ también son independientes entre sí**.
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/ModeloInd_2.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloInd_2.png", error=FALSE)
 ```
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/ModeloInd_3.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloInd_3.png", error=FALSE)
 ```
 
 _Figura 1.2_
@@ -111,13 +111,13 @@ _Nota: $S\geq 0$ bajo el contexto y definiciones que se mencionaron en esta secc
 A continuación se muestran vídeos con la explicación de lo mencionado anteriormente:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/ModeloInd_4.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloInd_4.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/rekGEr6sGoQ
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/ModeloInd_5.png", error=FALSE)
+knitr::include_graphics("Imagenes/ModeloInd_5.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/uGhUhhZh3Ok
@@ -127,7 +127,7 @@ _Link de YouTube:_ https://youtu.be/uGhUhhZh3Ok
 Sean $\{C_i\}\sim Exp\left(\frac{1}{200}\right)$ los montos de reclamación para $n=100$ asegurados, de los cuales la probabilidad de reclamación está dada por la siguiente tabla:
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("Imágenes/TablaAsegurados.png", error=FALSE)
+knitr::include_graphics("Imagenes/TablaAsegurados.png", error=FALSE)
 ```
 
     
@@ -206,7 +206,7 @@ $$f_Y(t)=\mathbb{P}[Y=t]=\displaystyle\sum_{x=0}^{\infty}\mathbb{P}[Y=t | X=x]\m
 Pero esta notación con "$f$" no debe confundirse, sería "muy cómodo" simplemente cambiar la suma por una integral para decir que es válido en el caso continuo, pero estaríamos abusando de la notación y reaccionando de una manera **heurística** al confundir $f$ con $\mathbb{P}.$
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/Heurísticas.png", error=FALSE)
+knitr::include_graphics("Imagenes/Heuristicas.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://youtu.be/pJI8LfnPPB8
@@ -513,7 +513,7 @@ Que en nuestro ejemplo sería para $p=97.5\%$
 Un video con otra aplicación relacionada con el tema lo pueden ver a continuación:
 
 ```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("Imágenes/9. LMS.png", error=FALSE)
+knitr::include_graphics("Imagenes/9_LMS.png", error=FALSE)
 ```
 
 _Link de YouTube:_ https://www.youtube.com/watch?v=TAjhROWBkiE
